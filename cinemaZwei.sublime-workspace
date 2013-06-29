@@ -1,0 +1,1558 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pas",
+				"password_confirmation"
+			],
+			[
+				"passw",
+				"password_validation"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"ag",
+				"again"
+			],
+			[
+				"pnom",
+				"pnorms"
+			],
+			[
+				"Lin",
+				"LiangWangExample"
+			],
+			[
+				"temp",
+				"temperaturesNo"
+			],
+			[
+				"updated",
+				"updatedStates"
+			],
+			[
+				"trans",
+				"tmpTranspositionHistory"
+			],
+			[
+				"tranosN",
+				"transpositionsNo"
+			],
+			[
+				"itera",
+				"iterationsNo"
+			],
+			[
+				"gri",
+				"grid"
+			],
+			[
+				"grid",
+				"gridLength"
+			],
+			[
+				"transpositi",
+				"transpositionHistory"
+			],
+			[
+				"tran",
+				"lastTranspositionNo"
+			],
+			[
+				"propo",
+				"proposalCovariancesCholeskised"
+			],
+			[
+				"space",
+				"spaceDim"
+			],
+			[
+				"che",
+				"checkIterationsNo"
+			],
+			[
+				"targ",
+				"targetUDensity"
+			],
+			[
+				"sig",
+				"sigma2"
+			],
+			[
+				"Mixtures",
+				"mixtures"
+			],
+			[
+				"ite",
+				"iterationsNo"
+			],
+			[
+				"tar",
+				"targetMeasure"
+			],
+			[
+				"state",
+				"stateSpace"
+			],
+			[
+				"uMea",
+				"uMeasures"
+			],
+			[
+				"Unn",
+				"unnormalisedDensity"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"it",
+				"iterationsNo"
+			],
+			[
+				"tm",
+				"temperatures"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"tmp",
+				"tmpStates"
+			],
+			[
+				"Met",
+				"MetropolisHasting"
+			],
+			[
+				"Rela",
+				"RealStateSpaces"
+			],
+			[
+				"Al",
+				"algorithm"
+			],
+			[
+				"sim",
+				"sigma"
+			],
+			[
+				"mix",
+				"mixturesMeans"
+			],
+			[
+				"unno",
+				"unnormalisedDensity"
+			],
+			[
+				"ree",
+				"require"
+			],
+			[
+				"no",
+				"noOfIterations"
+			],
+			[
+				"Tempe",
+				"Temperature"
+			],
+			[
+				"slo",
+				"slotNo"
+			],
+			[
+				"update",
+				"updatedStates"
+			],
+			[
+				"proposal",
+				"proposalAccepted"
+			],
+			[
+				"transl",
+				"translatorFromLexicOrderToTranspositions"
+			],
+			[
+				"translator",
+				"translateLexicToTranspositions"
+			],
+			[
+				"tra",
+				"transposition"
+			],
+			[
+				"not",
+				"noOfTranspositions"
+			],
+			[
+				"translat",
+				"translateLexicToTranspositions"
+			],
+			[
+				"updat",
+				"updateSwapUProbs"
+			],
+			[
+				"stat",
+				"stateSpace"
+			],
+			[
+				"las",
+				"lastStates"
+			],
+			[
+				"ins",
+				"insertStates"
+			],
+			[
+				"lastSwap",
+				"lastSwapLogProbability"
+			],
+			[
+				"proposalSwap",
+				"proposalSwapLogProbability"
+			],
+			[
+				"targe",
+				"targetLogDensities"
+			],
+			[
+				"pro",
+				"proposalSwap"
+			],
+			[
+				"last",
+				"lastStatesLogUnDensities"
+			],
+			[
+				"inver",
+				"inverseTemperatures"
+			],
+			[
+				"get",
+				"getProposalLogsOfUnnormalisedDensities"
+			],
+			[
+				"curren",
+				"currentStates"
+			],
+			[
+				"prop",
+				"proposedStates"
+			],
+			[
+				"log",
+				"logDenProposedStates"
+			],
+			[
+				"cov",
+				"covarianceMatrixNo"
+			],
+			[
+				"covar",
+				"proposalCovariancesCholeskised"
+			],
+			[
+				"detailed",
+				"detailedOutput"
+			],
+			[
+				"lex",
+				"lexicNumber"
+			],
+			[
+				"enli",
+				"enlistedAdditionalInfo"
+			],
+			[
+				"real",
+				"realFiniteDimensionalStateSpaceStructure"
+			],
+			[
+				"init",
+				"initialStates"
+			],
+			[
+				"ini",
+				"initialStatesNoOfChains"
+			],
+			[
+				"simu",
+				"simulatedStates"
+			],
+			[
+				"si",
+				"simulatedStates"
+			],
+			[
+				"ife",
+				"ifelse"
+			],
+			[
+				"noO",
+				"noOfSlots"
+			],
+			[
+				"i",
+				"initialStatesNoOfChains"
+			],
+			[
+				"nof",
+				"noOfChains"
+			],
+			[
+				"noOf",
+				"noOfSteps"
+			],
+			[
+				"initia",
+				"initializeStateSpaceStructure"
+			],
+			[
+				"strat",
+				"strategyNumber"
+			],
+			[
+				"st",
+				"strategyNumber"
+			],
+			[
+				"cur",
+				"currentStates"
+			],
+			[
+				"cure",
+				"currentStatesLogDensities"
+			],
+			[
+				"numer",
+				"numeric"
+			],
+			[
+				"int",
+				"inverseTemperatures"
+			],
+			[
+				"Tempere",
+				"temperatures"
+			],
+			[
+				"pa",
+				"ParallelTempering"
+			],
+			[
+				"num",
+				"numeration"
+			],
+			[
+				"cu",
+				"currentStates"
+			],
+			[
+				"probl",
+				"problemDimension"
+			],
+			[
+				"initi",
+				"initialPoints"
+			],
+			[
+				"inti",
+				"initialPoints"
+			],
+			[
+				"initalize",
+				"initializeDataStructures"
+			],
+			[
+				"prob",
+				"problemDimension"
+			],
+			[
+				"check",
+				"check"
+			],
+			[
+				"con",
+				"conditionChangingSmokesToNo"
+			],
+			[
+				"Da",
+				"Daily_Smokes"
+			],
+			[
+				"Smoke",
+				"Smokes"
+			],
+			[
+				"co",
+				"conditionEliminatingInconsistentObservations"
+			],
+			[
+				"D",
+				"Daily_Smokes"
+			],
+			[
+				"cont",
+				"contrasts"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"T",
+				"TRUE"
+			],
+			[
+				"Si",
+				"Simulation"
+			],
+			[
+				"Init",
+				"Initial_Points"
+			],
+			[
+				"Ini",
+				"Initial_Points"
+			],
+			[
+				"Targe",
+				"Target_Density"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Target",
+				"Call_Target_Density"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"mysql_c",
+				"mysql_connect"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/cinema2/buildingTables.sql",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Unix",
+				"name": "CREATE TABLE movies ("
+			}
+		},
+		{
+			"file": "Model/Movie.php",
+			"settings":
+			{
+				"buffer_size": 246,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Controller/MoviesController.php",
+			"settings":
+			{
+				"buffer_size": 1304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "aaafd",
+			"settings":
+			{
+				"buffer_size": 5,
+				"line_ending": "Unix",
+				"name": "aaafd"
+			}
+		},
+		{
+			"file": "View/Movies/index.ctp",
+			"settings":
+			{
+				"buffer_size": 2300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "View/Movies/view.ctp",
+			"settings":
+			{
+				"buffer_size": 505,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "View/Movies/add.ctp",
+			"settings":
+			{
+				"buffer_size": 375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Model/Post.php",
+			"settings":
+			{
+				"buffer_size": 638,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\nclass PostsController extends AppController {\n/*\n    public $name = 'Posts';*/\n\n    public $helpers = array('Html', 'Form', 'Session');\n\n    public function index() {\n        //Adding this is stupid, because we use no view.\n        //print \"Hello World! I can see you, thought this action remains obscure.\";\n\n        //This will simply call the view responsible for showing all posts.\n        $this->set('posts', $this->Post->find('all'));\n\n        //print_r($this->params);\n        //print_r($this->Post);\n    }\n\n/*    public function hello(){\n        print \"Hello World! I can see you, thought this action remains obscure.\";\n    }\n*/\n    public function view($id = null) {\n        if (!$id) {\n                // Between the 'we get the error message'\n            throw new NotFoundException(__('Invalid post and no spaghetti for you! You did not supply any id.'));\n        }\n\n        $post = $this->Post->findById($id);\n        if (!$post) {\n            throw new NotFoundException(__('Invalid post and no anchovies for you! The number you are trying to reach is currently non-existant.'));\n        }\n        $this->set('post', $post);\n        //print_r($post);\n\n        $color = 'pink';\n\n        $this->set('colorForObsession', $color);\n    }\n\n    /*public function add() {\n        if ($this->request->is('post')) {\n            $this->Post->create();\n\n                //checks for validation errors and aborts the save if any occur\n            if ($this->Post->save($this->request->data)) {\n\n                // sets a message to a session variable to be displayed on the page after redirection\n                $this->Session->setFlash('Your post has been saved. Yabadabadoo.');\n                $this->redirect(array('action' => 'index'));\n            } else {\n                $this->Session->setFlash('Unable to add your post.');\n            }\n        }\n    }*/\n\n    public function add() {\n        if ($this->request->is('post')) {\n            //The user() function returns any column from the currently logged in user.\n            $this->request->data['Post']['user_id'] = $this->Auth->user('id');\n\n            if ($this->Post->save($this->request->data)) {\n                $this->Session->setFlash('Your post has been saved.');\n                $this->redirect(array('action' => 'index'));\n            }           \n        }\n    }\n\n    public function edit($id = null) {\n         if (!$id) {\n            throw new NotFoundException(__('Invalid post: no a single id chosen.'));\n        }\n\n        $post = $this->Post->findById($id);\n        if (!$post) {\n            throw new NotFoundException(__('Invalid post: no such id.'));\n        }\n\n        if ($this->request->is('post') || $this->request->is('put')) {\n            $this->Post->id = $id;\n            if ($this->Post->save($this->request->data)) {\n                $this->Session->setFlash('Your post has been updated.');\n                $this->redirect(array('action' => 'index'));\n            } else {\n                $this->Session->setFlash('Unable to update your post.');\n            }\n        }\n\n        if (!$this->request->data) {\n            $this->request->data = $post;\n        }\n    }\n\n    public function delete($id){\n        if ($this->request->is('get')) {\n            throw new MethodNotAllowedException();\n        }\n\n        if ($this->Post->delete($id)) {\n            $this->Session->setFlash('The post with id: ' . $id . ' has been deleted.');\n            $this->redirect(array('action' => 'index'));\n        }\n    } \n\n    public function isAuthorized($user) {\n       // All registered users can add posts\n        if ($this->action === 'add') {\n            return true;\n        }\n\n        //  allows authors to create posts but prevents the edition of posts if the author does not match\n        if (in_array($this->action, array('edit', 'delete'))) {\n            $postId = $this->request->params['pass'][0];\n        \n            if ($this->Post->isOwnedBy($postId, $user['id'])) {\n                return true;\n            } else {\n                $this->Session->setFlash('You do not have permissions. I mean - it is nothing personal. Please, do not be sad.');\n            }\n        }\n       return parent::isAuthorized($user);\n   }\n}\n\n?>",
+			"file": "Controller/PostsController.php",
+			"file_size": 4220,
+			"file_write_time": 1372457004000000,
+			"settings":
+			{
+				"buffer_size": 4223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Controller/UsersController.php",
+			"settings":
+			{
+				"buffer_size": 3714,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Model/User.php",
+			"settings":
+			{
+				"buffer_size": 2014,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "View/Posts/add.ctp",
+			"settings":
+			{
+				"buffer_size": 683,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/MyTex.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Add",
+				"Package Control: Add Repository"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"add r",
+				"Package Control: Add Repository"
+			],
+			[
+				"git",
+				"Github: Open File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"LaTex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"Late",
+				"Set Syntax: LaTeX"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/html/cake_2_0/app/Config/database.php",
+		"/var/www/html/cake_2_0/app/Config/bootstrap.php",
+		"/var/www/html/cake_2_0/app/Controller/AppController.php",
+		"/var/www/html/cake_2_0/app/Model/AppModel.php",
+		"/var/www/cinema/app/View/Movies/index.ctp",
+		"/var/www/cinema/app/Controller/MoviesController.php",
+		"/var/www/cinema/app/View/Movies/view.ctp",
+		"/var/www/cinema2/app/Config/bootstrap.php",
+		"/var/www/cinema2/app/Controller/AppController.php",
+		"/var/www/cinema2/app/Config/core.php",
+		"/var/www/html/cake_2_0/lib/Cake/Console/Templates/skel/Config/bootstrap.php",
+		"/var/www/cinema/app/View/Posts/view.ctp",
+		"/var/www/html/cake_2_0/app/Controller/UsersController.php",
+		"/var/www/html/cake_2_0/app/Model/User.php",
+		"/var/www/html/cake_2_0/app/View/Posts/index.ctp",
+		"/var/www/html/cake_2_0/app/View/Users/index.ctp",
+		"/var/www/html/cake_2_0/app/View/Layouts/default.ctp",
+		"/var/www/html/cake_2_0/app/Config/routes.php",
+		"/var/www/html/cake_2_0/app/View/Users/view.ctp",
+		"/var/www/cinema/app/Model/AppModel.php",
+		"/var/www/cinema/app/Controller/AppController.php",
+		"/var/www/html/cake_2_0/app/View/Users/add.ctp",
+		"/var/www/html/cake_2_0/app/Controller/PostsController.php",
+		"/var/www/html/cake_2_0/app/View/Posts/view.ctp",
+		"/var/www/html/cake_2_0/app/View/Users/edit.ctp",
+		"/var/www/html/cake_2_0/app/View/Users/login.ctp",
+		"/var/www/html/cake_2_0/app/Model/Post.php",
+		"/var/www/cinema/lib/Cake/Controller/CakeErrorController.php",
+		"/var/www/html/cake_2_0/lib/Cake/Controller/CakeErrorController.php",
+		"/var/www/html/cake_2_0/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php",
+		"/var/www/html/cake_2_0/lib/Cake/Controller/Component/Auth/ActionsAuthorize.php",
+		"/var/www/html/cake_2_0/app/View/Posts/add.ctp",
+		"/var/www/html/cake_2_0/app/View/Posts/edit.ctp",
+		"/var/www/cinema/app/Model/Movie.php",
+		"/var/www/cinema/app/Controller/TheatresController.php",
+		"/var/www/cinema/app/Controller/OrdersController.php",
+		"/var/www/cinema/app/Controller/ClientsController.php",
+		"/var/www/cinema/app/Model/Theatre.php",
+		"/var/www/cinema/app/Model/Client.php",
+		"/var/www/cinema/app/Model/Cashier.php",
+		"/var/www/cinema/app/Controller/TicketsController.php",
+		"/var/www/cinema/app/Controller/CashiersController.php",
+		"/var/www/cinema/app/Model/Order.php",
+		"/var/www/cinema/app/Model/Ticket.php",
+		"/var/www/html/cake_2_0/lib/Cake/Model/Model.php",
+		"/var/www/html/cake_2_0/app/View/Layouts/flash.ctp",
+		"/var/www/html/cake_2_0/app/View/Helper/AppHelper.php",
+		"/var/www/cinema/app/Config/database.php",
+		"/home/matteo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/var/www/html/cake_2_0/app/View/Errors/error400.ctp",
+		"/var/www/html/cake_2_0/app/View/Errors/error500.ctp",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/associativeArrays.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/associativeArraysTwo.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/constants.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/static.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/is_a_propoperty_exists_method_exists.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/style.css",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/oopBikeExample.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/oopCatExample.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/oop.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/strpos.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/substringLowercaseUppercase.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/coinFlip.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/switch.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/ifelse.php",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/PHP/arrayBasic.php",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/descriptions/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/Liang_Example.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Main_Simulation.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/garbage/try.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/garbage/GenderHistogram.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/ploting.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_III/Progetto_3/Tex/fastness_comparison.Rnw",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/algorithms.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/stateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetLiangDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetUnnormalisedDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetMeasures.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/simulations/simulations.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/tex/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realStateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:46:38.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:37:43.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/parallelTemperings.R",
+		"/home/matteo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/matteo/.config/sublime-text-2/Packages/User/SublimeREPL.sublime-settings",
+		"/home/matteo/.config/sublime-text-2/Packages/User/Main.sublime-menu",
+		"/home/matteo/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+		"/home/matteo/.config/sublime-text-2/Packages/User/R.sublime-build",
+		"/home/matteo/.config/sublime-text-2/Packages/User/MyTex.sublime-build",
+		"/etc/apt/sources.list",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-project",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/citationCommand.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/theory.tex",
+		"/home/matteo/Documents/Scienza/Latex/Poligon/tikz-er2.sty",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
+		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex",
+		"/home/matteo/Documents/Scienza/Latex/Poligon/entityRelationshipTest.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/abstract.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
+		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/tex/MHG_algorithm.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/swap_kernel.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/Corrispondenza.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/random_walk.tex",
+		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/parallel_tempering_presentation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/quicky.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/myBooks.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/myrefs.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/settings/classDetails.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/.gitignore",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/README.md",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/eccaNoNotes.bst",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/ecca_pl.bst",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/summary.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/simulations.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/rblarba.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/matteo_master.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/simulationsResults.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr2.cls",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.lof",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.toc"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<p><small>Produced: <?php echo $movie['Movie']['year_of_production']; ?></small></p>\n<p><small>Directed: <?php echo $movie['Movie']['director']; ?></small></p>\n<p><small>Genre: 	<?php echo $movie['Movie']['genre']; ?></small></p>",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Users",
+			"users",
+			"You are not authorized to access that locationf.",
+			"location",
+			"add",
+			"flash",
+			"post",
+			"Post",
+			"php",
+			"post",
+			"Post",
+			"’",
+			"AppModel",
+			"tmpRealDistribuantValues",
+			"x",
+			"x <- as.matrix(rnorm(20), 2, 10)",
+			"temperatures",
+			"gr",
+			"simulatedStates",
+			"\nLiangWangExample <- simulation$new(\n	iterationsNo= 10,\n	strategyNo 	= 3,\n	example 	= TRUE\n)\n\nLiangWangExample\nLiangWangExample$simulate()\n",
+			"rm( list = ls())\ndirectory <- \"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation\"\nsetwd(directory)\n\nsource(\"./targetMeasures/targetMeasures.R\")\nsource(\"./targetMeasures/targetUnnormalisedDensities.R\")\nsource(\"./targetMeasures/targetLiangDensities.R\")\nsource(\"./stateSpaces/stateSpaces.R\")\nsource(\"./stateSpaces/realStateSpaces.R\")\nsource(\"./algorithms/algorithms.R\")\nsource(\"./algorithms/parallelTemperings.R\")\nsource(\"./simulations/simulations.R\")\n\n\nLiangWangExample <- simulation$new(\n	iterationsNo= 10,\n	strategyNo 	= 3,\n	example 	= TRUE\n)\n\nLiangWangExample\nLiangWangExample$simulate()",
+			"simulatedStates",
+			"Random Walk NO",
+			"swapProposal",
+			"detailedOutput",
+			"accepted",
+			"\nclass(LiangWangExample$algorithm$rejectedRandomWalksNo)\nclass(LiangWangExample$algorithm$acceptedRandomWalksNo)",
+			"LiangWangExample$algorithm$acceptedRandomWalksNo",
+			"updatedStates",
+			"acceptedRandomWalksNo",
+			"LiangWangExample <- simulation$new(\n	iterationsNo= 1000,\n	strategyNo 	= 3,\n	example 	= TRUE	\n)\n",
+			"LiangWangExample <- simulation$new(\n	iterationsNo= 1000,\n	strategyNo 	= 4,\n	example 	= TRUE	\n)\n\nLiangWangExample",
+			"LiangWangExample$algorithm$plotHistory()\n",
+			"deb http://<my.favorite.cran.mirror>/bin/linux/ubuntu precise/",
+			"precise/",
+			"precise",
+			"strategy ",
+			"Following",
+			"cite",
+			"promo",
+			"geyer",
+			"cite",
+			"bfseries",
+			"geyer",
+			"bib",
+			"publisher",
+			"team",
+			"R-team",
+			"geyer",
+			"Geyer",
+			"Charles",
+			"Geyer",
+			"Maxime",
+			"format.note output",
+			"note",
+			"Miasojed",
+			"is catalog of 292 entries was generated by calibre on Friday, 21. June 2013 17:38\nThis catalog",
+			"*{",
+			"\\newpage",
+			"Wprowadzenie",
+			"\\addcontentsline",
+			"\\addcontentsline{toc}{chapter}{Wprowadzenie}",
+			"textbf",
+			"abstract",
+			"topskip",
+			"opskip",
+			"titlepage",
+			"tytul",
+			"\\k",
+			" \n",
+			"sdsd",
+			"ploit",
+			"transpositionHistory",
+			"lastTranspositionNo",
+			"transpositionHistory",
+			"accepted",
+			"iterationsNO",
+			"here",
+			"updatedStates",
+			"colnames",
+			"do.call",
+			"grid",
+			"OTHER_VALUE_ESTABLISHER",
+			"Liang_Density_Values_For_Contour_gg2plot",
+			"target",
+			"Hello",
+			"HERE",
+			"iteration",
+			"show",
+			"OMG",
+			"show",
+			"iterationsNo",
+			"proposeLogsOfUMeasures",
+			"lastStatesLogUDensities",
+			"strategyNo",
+			"translatorFromLexicOrderToTranspositions",
+			"strategyNumber",
+			"tmpStrategyNumber",
+			"strategyNumber",
+			"swapStrategy",
+			"updateSwapUProbs",
+			"OMG3",
+			"OMG",
+			"OMG4",
+			"updateSwapUProbs",
+			"lastSwapUProbs",
+			"show",
+			"proposeLogsOfUMeasures",
+			"updateSwapUProbs",
+			"proposeLogsOfUMeasures",
+			"updatedStates",
+			"prepareSimulation",
+			"getIteration",
+			"getStates",
+			"temperatures",
+			"iteration",
+			"show",
+			"tmpTemp",
+			"tmpNoOfIterations",
+			"noOfIterations",
+			"algorithmInitializator"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Movie",
+			"movie",
+			"Movie",
+			"movie",
+			"Movie",
+			"movie",
+			"user",
+			"User",
+			"",
+			"User",
+			"user",
+			"User",
+			"'",
+			"distribuantInGrid",
+			"rejected",
+			"BłażejMiasojedow",
+			"CharlesJ.Geyer",
+			"%format.note output",
+			"",
+			"strategyNo",
+			"tmpStrategyNo",
+			"strategyNo",
+			"strategy",
+			"strategyNo",
+			"tmpIterationsNo",
+			"iterationsNo",
+			"initializeAlgorithm",
+			"proposeLogsOfUMeasures",
+			"spaceDim",
+			"checkTemperatures",
+			"initializeAlgorithm",
+			"spaceDim",
+			"initializeParallelTempering",
+			"algorithm",
+			"getProposalLogsOfUDensities",
+			"spaceDim",
+			"iterationsNo",
+			"simpleProposalCovariance",
+			"iterationsNo",
+			"lastTranspositionNo",
+			"colsNo",
+			"chainNumbersNo",
+			"iterationsNo",
+			"tmpIterationsNo",
+			"iterationsNo",
+			"initialStatesDim",
+			"tmpSpaceDim",
+			"spaceDim",
+			"slotsNo",
+			"transpositionsNo",
+			"temperaturesNo",
+			"tmpTemperaturesNo",
+			"initialStatesTemperaturesNo",
+			"temperaturesNo",
+			"swapProposal",
+			"dataForPlot",
+			"dataw",
+			"data",
+			"plotData",
+			"data",
+			"LiangProposalCovariancesCholeskised",
+			"LiangProposalCovariances",
+			"LiangMeansAndCovariances",
+			"LiangInitialPoints",
+			"LiangNoOfTemperatures",
+			"LiangInverseTemperatures",
+			"LiangTemperatures",
+			"LiangMeansOfMixtures",
+			"LiangSpaceDimension",
+			"LiangProblemDimension",
+			"LiangClusterSigma",
+			"LiangClustesSigma",
+			"LiangClustersWeights",
+			"LiangNoOfClusters",
+			"subsection",
+			"proposalLogUDensities",
+			"lexics",
+			"Lexic",
+			"Lex",
+			"Prob",
+			"Probs",
+			"lastStatesLogUDensities",
+			"lastLogProbability",
+			"proposal",
+			"proposalLexic",
+			"extraSwapUProbabilities",
+			"noOfChainNumbers",
+			"chainNumbers",
+			"transpositionsUpdateForProposal",
+			"updatedStates",
+			"findTranspositionsForUpdate",
+			"ParallelTempering",
+			"initializeStateSpace",
+			"stateSpace",
+			"initializeRealStateSpace",
+			"initializeStateSpace",
+			"initializeRealStateSpaceStructure",
+			"stateSpace",
+			"updateLastStates",
+			"generateTranspositions",
+			"transposition",
+			"Transposition",
+			"transposition",
+			"transposion",
+			"transposition",
+			"permutationsForUpdate",
+			"lastStates",
+			"stateSpace",
+			"swapIwithJ",
+			"lastSwapUProbabilities",
+			"strategyNo",
+			"jes",
+			"permutation",
+			"lastProposalSwapProbabilities",
+			"lastSwapProbabilities",
+			"lastProposalLogUnDensities",
+			"lastStatesLogUnDensities",
+			"statesUpdatedByRandomWalk",
+			"stateUpdatedByRandomWalk",
+			"noOfLexicals",
+			"lexicals",
+			"translateLexicalToTranspostions",
+			"massTranslateLexicalToTranspostions",
+			"noOfLastPermutation",
+			"proposalCovariances",
+			"proposalCovariancesCholeskised",
+			"function(){}",
+			"noOfIterations"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/cinema2/buildingTables.sql",
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"auto_name": "CREATE TABLE movies (",
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Model/Movie.php",
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Controller/MoviesController.php",
+					"settings":
+					{
+						"buffer_size": 1304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"encoding_helper_loading": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "aaafd",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "View/Movies/index.ctp",
+					"settings":
+					{
+						"buffer_size": 2300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								326,
+								326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "View/Movies/view.ctp",
+					"settings":
+					{
+						"buffer_size": 505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								448,
+								448
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "View/Movies/add.ctp",
+					"settings":
+					{
+						"buffer_size": 375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "Model/Post.php",
+					"settings":
+					{
+						"buffer_size": 638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Controller/PostsController.php",
+					"settings":
+					{
+						"buffer_size": 4223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2205,
+								2205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Controller/UsersController.php",
+					"settings":
+					{
+						"buffer_size": 3714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2410,
+								2410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Model/User.php",
+					"settings":
+					{
+						"buffer_size": 2014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								545,
+								545
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "View/Posts/add.ctp",
+					"settings":
+					{
+						"buffer_size": 683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 92.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"user",
+				"Model/User.php"
+			],
+			[
+				"databas",
+				"www/html/cake_2_0/app/Config/database.php"
+			],
+			[
+				"add",
+				"www/html/cake_2_0/app/View/Users/add.ctp"
+			],
+			[
+				"userscont",
+				"www/html/cake_2_0/app/Controller/UsersController.php"
+			],
+			[
+				"appmod",
+				"www/html/cake_2_0/app/Model/AppModel.php"
+			],
+			[
+				"appcont",
+				"www/html/cake_2_0/app/Controller/AppController.php"
+			],
+			[
+				"postview",
+				"www/html/cake_2_0/app/View/Posts/view.ctp"
+			],
+			[
+				"post",
+				"www/html/cake_2_0/app/Controller/PostsController.php"
+			],
+			[
+				"appmodel",
+				"www/html/cake_2_0/app/Model/AppModel.php"
+			],
+			[
+				"postcont",
+				"www/html/cake_2_0/app/Controller/PostsController.php"
+			],
+			[
+				"postadd",
+				"www/html/cake_2_0/app/View/Posts/add.ctp"
+			],
+			[
+				"appcontr",
+				"www/html/cake_2_0/app/Controller/AppController.php"
+			],
+			[
+				"boootstrap",
+				"www/html/cake_2_0/lib/Cake/Console/Templates/skel/Config/bootstrap.php"
+			],
+			[
+				"postvie",
+				"www/cinema/app/View/Posts/view.ctp"
+			],
+			[
+				"usercont",
+				"www/html/cake_2_0/app/Controller/UsersController.php"
+			],
+			[
+				"usersvie",
+				"www/html/cake_2_0/app/View/Users/view.ctp"
+			],
+			[
+				"app",
+				"www/cinema/app/Model/AppModel.php"
+			],
+			[
+				"appc",
+				"www/cinema/app/Controller/AppController.php"
+			],
+			[
+				"user.ph",
+				"www/html/cake_2_0/app/Model/User.php"
+			],
+			[
+				"user.p",
+				"www/html/cake_2_0/app/Model/User.php"
+			],
+			[
+				"usercon",
+				"www/html/cake_2_0/app/Controller/UsersController.php"
+			],
+			[
+				"appcon",
+				"www/cinema/app/Controller/AppController.php"
+			],
+			[
+				"master",
+				"master/parallelTemperingMaster.tex"
+			],
+			[
+				"hits",
+				"Implementation/histogram.svg"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true
+}

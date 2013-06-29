@@ -1,0 +1,1026 @@
+2013-05-05 11:26:15 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 37]
+2013-05-05 11:26:15 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 37, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 37, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-05 13:13:33 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/posts/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 13:15:07 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /html/cake_2_0/posts/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-05 13:18:26 Error: [NotFoundException] Invalid post
+Request URL: /html/cake_2_0/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-05 13:58:24 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 26]
+2013-05-05 13:58:24 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-05 14:01:52 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 26]
+2013-05-05 14:01:52 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-05 14:10:28 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 26]
+2013-05-05 14:10:28 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-05 14:10:42 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 26]
+2013-05-05 14:10:42 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 26, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-24 21:33:38 Error: [MissingActionException] Action PostsController::hello_world() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'hello_world',
+)
+Request URL: /html/cake_2_0/posts/hello_world/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-24 21:34:02 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Posts/hello_world.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Posts/hello_world.ctp',
+)
+Request URL: /html/cake_2_0/posts/helloWorld/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 21:34:24 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Posts/hello.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Posts/hello.ctp',
+)
+Request URL: /html/cake_2_0/posts/hello/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 21:34:32 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Posts/hello.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Posts/hello.ctp',
+)
+Request URL: /html/cake_2_0/posts/hello/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:18:59 Error: [MissingActionException] Action PostsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '1',
+)
+Request URL: /html/cake_2_0/posts/1/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-24 23:19:11 Error: [NotFoundException] Invalid post
+Request URL: /html/cake_2_0/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:19:29 Error: [NotFoundException] Invalid post
+Request URL: /html/cake_2_0/posts/view/8
+Stack Trace:
+#0 [internal function]: PostsController->view('8')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:23:39 Error: [NotFoundException] Invalid post and no spaghetti for you!
+Request URL: /html/cake_2_0/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:24:13 Error: [NotFoundException] Invalid post and no anchovies for you!
+Request URL: /html/cake_2_0/posts/view/8
+Stack Trace:
+#0 [internal function]: PostsController->view('8')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:28:34 Error: [NotFoundException] Invalid post and no anchovies for you!
+Request URL: /html/cake_2_0/posts/view/8
+Stack Trace:
+#0 [internal function]: PostsController->view('8')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:29:14 Error: [NotFoundException] Invalid post and no spaghetti for you!
+Request URL: /html/cake_2_0/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:29:50 Error: [NotFoundException] Invalid post and no spaghetti for you!
+Request URL: /html/cake_2_0/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-24 23:30:04 Error: [NotFoundException] Invalid post and no spaghetti for you!
+Request URL: /html/cake_2_0/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-25 12:26:42 Error: [NotFoundException] Invalid post and no spaghetti for you! You did not supply any id.
+Request URL: /html/cake_2_0/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-25 12:26:47 Error: [NotFoundException] Invalid post and no anchovies for you! The number you are trying to reach is currently non-existant.
+Request URL: /html/cake_2_0/posts/view/10
+Stack Trace:
+#0 [internal function]: PostsController->view('10')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-25 12:30:53 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 34]
+2013-06-25 12:30:53 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-25 12:31:26 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 34]
+2013-06-25 12:31:26 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-25 12:31:57 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 34]
+2013-06-25 12:31:57 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-25 12:32:21 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 34]
+2013-06-25 12:32:21 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-25 12:34:33 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 34]
+2013-06-25 12:34:33 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /html/cake_2_0/posts/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 34, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-25 20:00:06 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-25 20:00:12 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/index/
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-25 21:46:08 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Users/index.ctp',
+)
+Request URL: /html/cake_2_0/users
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-25 21:46:14 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Users/index.ctp',
+)
+Request URL: /html/cake_2_0/users/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-25 22:39:03 Error: [MissingControllerException] Controller class Users.Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Users.Controller',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/users.
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-26 10:47:08 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /html/cake_2_0/users/delete/3
+Stack Trace:
+#0 [internal function]: UsersController->delete('3')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-26 10:54:16 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Pages/home/user.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Pages/home/user.ctp',
+)
+Request URL: /html/cake_2_0/pages/home/user
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName('home/user')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render('home/user', NULL)
+#2 /var/www/html/cake_2_0/app/Controller/PagesController.php(73): Controller->render('home/user')
+#3 [internal function]: PagesController->display('home', 'user')
+#4 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-26 10:54:19 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Pages/home/users.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Pages/home/users.ctp',
+)
+Request URL: /html/cake_2_0/pages/home/users
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName('home/users')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render('home/users', NULL)
+#2 /var/www/html/cake_2_0/app/Controller/PagesController.php(73): Controller->render('home/users')
+#3 [internal function]: PagesController->display('home', 'users')
+#4 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-26 10:54:22 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Pages/home/users.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Pages/home/users.ctp',
+)
+Request URL: /html/cake_2_0/pages/home/users/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName('home/users')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render('home/users', NULL)
+#2 /var/www/html/cake_2_0/app/Controller/PagesController.php(73): Controller->render('home/users')
+#3 [internal function]: PagesController->display('home', 'users')
+#4 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-26 10:57:07 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/logout
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-26 11:11:37 Error: [MissingActionException] Action PostsController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'display',
+)
+Request URL: /html/cake_2_0/posts/display/home
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-26 11:15:18 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/logout
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-26 11:43:09 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 12]
+2013-06-26 11:43:09 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /html/cake_2_0/posts/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 11:50:17 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cake_2_0/app/View/Posts/index.ctp, line 11]
+2013-06-26 11:50:17 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /html/cake_2_0/posts/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 11:50:25 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cake_2_0/app/View/Posts/index.ctp, line 11]
+2013-06-26 11:50:25 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /html/cake_2_0/posts/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 11:50:50 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/html/cake_2_0/app/View/Posts/index.ctp, line 13]
+2013-06-26 11:50:50 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /html/cake_2_0/posts/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 12:11:16 Error: Fatal Error (1): Cannot use object of type Post as array in [/var/www/html/cake_2_0/app/Controller/PostsController.php, line 14]
+2013-06-26 12:11:16 Error: [FatalErrorException] Cannot use object of type Post as array
+Request URL: /html/cake_2_0/posts/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/var/www/html/c...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/var/www/html/c...', 14, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/var/www/html/c...', 14, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:18:54 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:18:54 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/posts/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:34:48 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:34:48 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:35:01 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-26 15:35:01 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:35:01 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/index
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:35:12 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:35:12 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:36:50 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 58]
+2013-06-26 15:36:50 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:36:52 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 58]
+2013-06-26 15:36:52 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:37:30 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 58]
+2013-06-26 15:37:30 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:38:30 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 58]
+2013-06-26 15:38:30 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:42:15 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:42:15 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/posts/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:42:17 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:42:17 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/posts/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:42:35 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:42:35 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:44:21 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:44:21 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:44:22 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:44:22 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:44:25 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:44:25 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:44:45 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:44:45 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:44:46 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:44:46 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:45:09 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:45:10 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:45:11 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:45:11 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:45:15 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:45:15 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:48:03 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:48:03 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:48:06 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:48:06 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/posts/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:48:11 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:48:11 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:48:20 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 55]
+2013-06-26 15:48:20 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/pages
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 15:58:28 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/cake_2_0/app/Controller/AppController.php, line 62]
+2013-06-26 15:58:28 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /html/cake_2_0/pages
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 62, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 18:53:40 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cake_2_0/app/Model/User.php, line 67]
+2013-06-26 18:53:40 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /html/cake_2_0/users/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 67, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 67, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 18:54:32 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/html/cake_2_0/app/Model/User.php, line 51]
+2013-06-26 18:54:32 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /html/cake_2_0/users/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 51, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 51, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-26 19:04:00 Error: Fatal Error (4): syntax error, unexpected T_RETURN in [/var/www/html/cake_2_0/app/Model/User.php, line 58]
+2013-06-26 19:04:00 Error: [FatalErrorException] syntax error, unexpected T_RETURN
+Request URL: /html/cake_2_0/users/add
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 11:13:21 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/cake_2_0/app/View/Posts/index.ctp, line 57]
+2013-06-27 11:13:21 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /html/cake_2_0/posts/index/home
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 57, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 57, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:11:02 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 5]
+2013-06-27 17:11:02 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:11:38 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 5]
+2013-06-27 17:11:38 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:12:32 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/var/www/html/cake_2_0/app/Model/User.php, line 5]
+2013-06-27 17:12:32 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:12:35 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/var/www/html/cake_2_0/app/Model/User.php, line 5]
+2013-06-27 17:12:35 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 5, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:13:13 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 8]
+2013-06-27 17:13:13 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 8, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 8, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:15:09 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 9]
+2013-06-27 17:15:09 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:15:55 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 9]
+2013-06-27 17:15:55 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/users/view/1
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:16:01 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 9]
+2013-06-27 17:16:01 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:17:48 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/var/www/html/cake_2_0/app/Model/User.php, line 9]
+2013-06-27 17:17:48 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:17:50 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/var/www/html/cake_2_0/app/Model/User.php, line 9]
+2013-06-27 17:17:50 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:18:12 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cake_2_0/app/Model/User.php, line 9]
+2013-06-27 17:18:12 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 9, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-27 17:29:00 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /var/www/html/cake_2_0/lib/Cake/View/View.php(834): HelperCollection->__isset('User')
+#2 /var/www/html/cake_2_0/app/View/Posts/index.ctp(46): View->__get('User')
+#3 /var/www/html/cake_2_0/lib/Cake/View/View.php(946): include('/var/www/html/c...')
+#4 /var/www/html/cake_2_0/lib/Cake/View/View.php(908): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cake_2_0/lib/Cake/View/View.php(471): View->_render('/var/www/html/c...')
+#6 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#7 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#8 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cake_2_0/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-06-27 17:52:36 Error: Fatal Error (4): syntax error, unexpected ':' in [/var/www/html/cake_2_0/app/View/Posts/index.ctp, line 58]
+2013-06-27 17:52:36 Error: [FatalErrorException] syntax error, unexpected ':'
+Request URL: /html/cake_2_0/
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#2 /var/www/html/cake_2_0/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 58, Array)
+#3 /var/www/html/cake_2_0/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-28 15:17:35 Error: [MissingControllerException] Controller class DupaController could not be found.
+Exception Attributes: array (
+  'class' => 'DupaController',
+  'plugin' => NULL,
+)
+Request URL: /html/cake_2_0/dupa
+Stack Trace:
+#0 /var/www/html/cake_2_0/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-28 15:38:40 Error: [MissingViewException] View file "/var/www/html/cake_2_0/app/View/Pages/display/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cake_2_0/app/View/Pages/display/home.ctp',
+)
+Request URL: /html/cake_2_0/pages/display/home
+Stack Trace:
+#0 /var/www/html/cake_2_0/lib/Cake/View/View.php(468): View->_getViewFileName('display/home')
+#1 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(948): View->render('display/home', NULL)
+#2 /var/www/html/cake_2_0/app/Controller/PagesController.php(73): Controller->render('display/home')
+#3 [internal function]: PagesController->display('display', 'home')
+#4 /var/www/html/cake_2_0/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cake_2_0/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cake_2_0/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-29 11:21:09 Error: [MissingTableException] Table movies for model Movie was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'movies',
+  'class' => 'Movie',
+  'ds' => 'default',
+)
+Request URL: /cinema2/movies/
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Model.php(3244): Model->setSource('movies')
+#1 /var/www/cinema2/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#2 /var/www/cinema2/app/Controller/MoviesController.php(9): Model->find('all')
+#3 [internal function]: MoviesController->index()
+#4 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(MoviesController), Array)
+#5 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-29 11:21:32 Error: [MissingTableException] Table movies for model Movie was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'movies',
+  'class' => 'Movie',
+  'ds' => 'default',
+)
+Request URL: /cinema2/movies/index
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Model.php(3244): Model->setSource('movies')
+#1 /var/www/cinema2/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#2 /var/www/cinema2/app/Controller/MoviesController.php(9): Model->find('all')
+#3 [internal function]: MoviesController->index()
+#4 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(MoviesController), Array)
+#5 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-29 11:47:42 Error: [MissingActionException] Action MoviesController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'MoviesController',
+  'action' => 'edit',
+)
+Request URL: /cinema2/movies/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-29 11:54:51 Error: [MissingActionException] Action MoviesController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'MoviesController',
+  'action' => 'edit',
+)
+Request URL: /cinema2/movies/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-29 13:14:00 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cinema2/
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Model.php(3244): Model->setSource('posts')
+#1 /var/www/cinema2/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#2 /var/www/cinema2/app/Controller/PostsController.php(13): Model->find('all')
+#3 [internal function]: PostsController->index()
+#4 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#5 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-06-29 13:16:32 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/cinema2/app/Controller/UsersController.php, line 10]
+2013-06-29 13:16:32 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cinema2/users/login
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 13:18:15 Error: [MissingActionException] Action MoviesController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'MoviesController',
+  'action' => 'edit',
+)
+Request URL: /cinema2/movies/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-29 13:39:25 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/cinema2/app/Model/Movie.php, line 36]
+2013-06-29 13:39:25 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cinema2/movies/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 36, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 36, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 13:39:42 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/cinema2/app/Model/Movie.php, line 36]
+2013-06-29 13:39:42 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cinema2/movies/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 36, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 36, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
