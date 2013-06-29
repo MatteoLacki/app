@@ -1,6 +1,8 @@
 <?php
 
 class Movie extends AppModel {
+
+	public $hasMany = 'Performance';
 	 
     public $validate = array(
         'title' => array(

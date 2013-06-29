@@ -1,12 +1,9 @@
-<div class="movies view">
+<div class="theatres view">
 
-	<h3><?php echo h($movie['Movie']['title']); ?></h3>
-
-	<p><small>Rok produkcji: 	<?php echo $movie['Movie']['year']; ?></small></p>
-	<p><small>Reżyseria:	 	<?php echo $movie['Movie']['register']; ?></small></p>
-	<p><small>Minuty: 			<?php echo $movie['Movie']['runtime']; ?></small></p> 
-
-	<p><?php echo h($movie['Movie']['description']); ?></p>
+	<h3>Sala: <?php echo h($theatre['Theatre']['name']); ?></h3>
+	<p><small>Informację Dodano: <?php echo $theatre['Theatre']['created']; ?></small></p>
+	<p><small>Informację Zmodyfikowano: <?php echo $theatre['Theatre']['modified']; ?></small></p>
+	<p>Liczba Foteli: <?php echo h($theatre['Theatre']['seats']); ?></p>
 
 </div>
 <div class="actions">
@@ -15,7 +12,7 @@
 		<li>
 			<?php
 					echo $this->Html->link(
-                        'Spis Filmów', 
+                        'Spis Sal', 
                         array(
                         	'action' => 'index'
 						)
@@ -28,7 +25,7 @@
                     'Modyfikuj', 
                     array(
                         'action' => 'edit', 
-                        $movie['Movie']['id']
+                        $theatre['Theatre']['id']
                     )
                 );
             ?>
@@ -39,7 +36,7 @@
                     'Usuń',
                     array( 
                         'action' => 'delete',
-                        $movie['Movie']['id']
+                        $theatre['Theatre']['id']
                     ),
                     array(
                         'confirm'   => 'Czy aby na pewno?'

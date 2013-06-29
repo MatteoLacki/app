@@ -63,6 +63,16 @@ class MoviesController extends AppController {
         }
     }
 
+    public function delete($id){
+        if ($this->request->is('get')) {
+            throw new MethodNotAllowedException();
+        }
+
+        if ($this->Movie->delete($id)) {
+            $this->Session->setFlash('Film o numerze: ' . $id . ' został zlikwidowany.');
+            $this->redirect(array('action' => 'index'));
+        }
+    }
 
 }
 

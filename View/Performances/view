@@ -1,12 +1,8 @@
-<div class="movies view">
+<div class="performances view">
 
-	<h3><?php echo h($movie['Movie']['title']); ?></h3>
-
-	<p><small>Rok produkcji: 	<?php echo $movie['Movie']['year']; ?></small></p>
-	<p><small>Reżyseria:	 	<?php echo $movie['Movie']['register']; ?></small></p>
-	<p><small>Minuty: 			<?php echo $movie['Movie']['runtime']; ?></small></p> 
-
-	<p><?php echo h($movie['Movie']['description']); ?></p>
+	<h3>Seans: <?php echo h($performance['Performance']['id']); ?></h3>
+	<p><small>Informację Dodano: <?php echo $performance['Performance']['created']; ?></small></p>
+	<p><small>Informację Zmodyfikowano: <?php echo $performance['Performance']['modified']; ?></small></p>
 
 </div>
 <div class="actions">
@@ -15,7 +11,7 @@
 		<li>
 			<?php
 					echo $this->Html->link(
-                        'Spis Filmów', 
+                        'Spis Seansów', 
                         array(
                         	'action' => 'index'
 						)
@@ -28,7 +24,7 @@
                     'Modyfikuj', 
                     array(
                         'action' => 'edit', 
-                        $movie['Movie']['id']
+                        $performance['Performance']['id']
                     )
                 );
             ?>
@@ -39,7 +35,7 @@
                     'Usuń',
                     array( 
                         'action' => 'delete',
-                        $movie['Movie']['id']
+                        $performance['Performance']['id']
                     ),
                     array(
                         'confirm'   => 'Czy aby na pewno?'

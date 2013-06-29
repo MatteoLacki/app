@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"des",
+				"description"
+			],
+			[
 				"pas",
 				"password_confirmation"
 			],
@@ -452,103 +456,34 @@
 	"buffers":
 	[
 		{
-			"file": "/var/www/cinema2/buildingTables.sql",
-			"settings":
-			{
-				"buffer_size": 240,
-				"line_ending": "Unix",
-				"name": "CREATE TABLE movies ("
-			}
-		},
-		{
 			"file": "Model/Movie.php",
 			"settings":
 			{
-				"buffer_size": 246,
+				"buffer_size": 814,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Controller/MoviesController.php",
+			"file": "Model/Theatre.php",
 			"settings":
 			{
-				"buffer_size": 1304,
+				"buffer_size": 414,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "aaafd",
+			"file": "Model/Performance.php",
 			"settings":
 			{
-				"buffer_size": 5,
-				"line_ending": "Unix",
-				"name": "aaafd"
-			}
-		},
-		{
-			"file": "View/Movies/index.ctp",
-			"settings":
-			{
-				"buffer_size": 2300,
+				"buffer_size": 435,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "View/Movies/view.ctp",
+			"file": "Controller/PerformancesController.php",
 			"settings":
 			{
-				"buffer_size": 505,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "View/Movies/add.ctp",
-			"settings":
-			{
-				"buffer_size": 375,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Model/Post.php",
-			"settings":
-			{
-				"buffer_size": 638,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\nclass PostsController extends AppController {\n/*\n    public $name = 'Posts';*/\n\n    public $helpers = array('Html', 'Form', 'Session');\n\n    public function index() {\n        //Adding this is stupid, because we use no view.\n        //print \"Hello World! I can see you, thought this action remains obscure.\";\n\n        //This will simply call the view responsible for showing all posts.\n        $this->set('posts', $this->Post->find('all'));\n\n        //print_r($this->params);\n        //print_r($this->Post);\n    }\n\n/*    public function hello(){\n        print \"Hello World! I can see you, thought this action remains obscure.\";\n    }\n*/\n    public function view($id = null) {\n        if (!$id) {\n                // Between the 'we get the error message'\n            throw new NotFoundException(__('Invalid post and no spaghetti for you! You did not supply any id.'));\n        }\n\n        $post = $this->Post->findById($id);\n        if (!$post) {\n            throw new NotFoundException(__('Invalid post and no anchovies for you! The number you are trying to reach is currently non-existant.'));\n        }\n        $this->set('post', $post);\n        //print_r($post);\n\n        $color = 'pink';\n\n        $this->set('colorForObsession', $color);\n    }\n\n    /*public function add() {\n        if ($this->request->is('post')) {\n            $this->Post->create();\n\n                //checks for validation errors and aborts the save if any occur\n            if ($this->Post->save($this->request->data)) {\n\n                // sets a message to a session variable to be displayed on the page after redirection\n                $this->Session->setFlash('Your post has been saved. Yabadabadoo.');\n                $this->redirect(array('action' => 'index'));\n            } else {\n                $this->Session->setFlash('Unable to add your post.');\n            }\n        }\n    }*/\n\n    public function add() {\n        if ($this->request->is('post')) {\n            //The user() function returns any column from the currently logged in user.\n            $this->request->data['Post']['user_id'] = $this->Auth->user('id');\n\n            if ($this->Post->save($this->request->data)) {\n                $this->Session->setFlash('Your post has been saved.');\n                $this->redirect(array('action' => 'index'));\n            }           \n        }\n    }\n\n    public function edit($id = null) {\n         if (!$id) {\n            throw new NotFoundException(__('Invalid post: no a single id chosen.'));\n        }\n\n        $post = $this->Post->findById($id);\n        if (!$post) {\n            throw new NotFoundException(__('Invalid post: no such id.'));\n        }\n\n        if ($this->request->is('post') || $this->request->is('put')) {\n            $this->Post->id = $id;\n            if ($this->Post->save($this->request->data)) {\n                $this->Session->setFlash('Your post has been updated.');\n                $this->redirect(array('action' => 'index'));\n            } else {\n                $this->Session->setFlash('Unable to update your post.');\n            }\n        }\n\n        if (!$this->request->data) {\n            $this->request->data = $post;\n        }\n    }\n\n    public function delete($id){\n        if ($this->request->is('get')) {\n            throw new MethodNotAllowedException();\n        }\n\n        if ($this->Post->delete($id)) {\n            $this->Session->setFlash('The post with id: ' . $id . ' has been deleted.');\n            $this->redirect(array('action' => 'index'));\n        }\n    } \n\n    public function isAuthorized($user) {\n       // All registered users can add posts\n        if ($this->action === 'add') {\n            return true;\n        }\n\n        //  allows authors to create posts but prevents the edition of posts if the author does not match\n        if (in_array($this->action, array('edit', 'delete'))) {\n            $postId = $this->request->params['pass'][0];\n        \n            if ($this->Post->isOwnedBy($postId, $user['id'])) {\n                return true;\n            } else {\n                $this->Session->setFlash('You do not have permissions. I mean - it is nothing personal. Please, do not be sad.');\n            }\n        }\n       return parent::isAuthorized($user);\n   }\n}\n\n?>",
-			"file": "Controller/PostsController.php",
-			"file_size": 4220,
-			"file_write_time": 1372457004000000,
-			"settings":
-			{
-				"buffer_size": 4223,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Controller/UsersController.php",
-			"settings":
-			{
-				"buffer_size": 3714,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Model/User.php",
-			"settings":
-			{
-				"buffer_size": 2014,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "View/Posts/add.ctp",
-			"settings":
-			{
-				"buffer_size": 683,
+				"buffer_size": 1502,
 				"line_ending": "Unix"
 			}
 		}
@@ -556,9 +491,13 @@
 	"build_system": "Packages/User/MyTex.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"encodi",
+				"HTML: Encode Special Characters"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -633,6 +572,32 @@
 	},
 	"file_history":
 	[
+		"/var/www/cinema2/app/View/Theatres/view.ctp",
+		"/var/www/cinema2/app/View/Movies/view.ctp",
+		"/var/www/cinema2/app/Controller/MoviesController.php",
+		"/var/www/cinema2/app/View/Movies/index.ctp",
+		"/var/www/cinema2/app/View/Theatres/index.ctp",
+		"/var/www/cinema2/app/View/Theatres/add.ctp",
+		"/var/www/cinema2/app/View/Theatres/edit.ctp",
+		"/var/www/cinema2/app/Controller/TheatresController.php",
+		"/var/www/cinema2/app/Model/Movie.php",
+		"/var/www/cinema2/app/Model/AppModel.php",
+		"/var/www/cinema2/app/Model/Show.php",
+		"/var/www/cinema2/app/Model/Theatre.php",
+		"/var/www/cinema2/app/Controller/AppController.php",
+		"/var/www/cinema2/app/Controller/ShowsController.php",
+		"/var/www/cinema2/app/View/Users/add.ctp",
+		"/var/www/cinema2/app/View/Movies/add.ctp",
+		"/var/www/cinema2/app/Model/User.php",
+		"/var/www/cinema2/app/View/Movies/edit.ctp",
+		"/var/www/cinema2/app/Controller/UsersController.php",
+		"/var/www/cinema2/app/Model/Post.php",
+		"/var/www/cinema2/app/View/Posts/add.ctp",
+		"/var/www/cinema2/app/Controller/PostsController.php",
+		"/var/www/cinema2/app/Config/routes.php",
+		"/var/www/cinema2/app/View/Layouts/default.ctp",
+		"/var/www/cinema2/app/Config/database.php",
+		"/var/www/cinema2/buildingTables.sql",
 		"/var/www/html/cake_2_0/app/Config/database.php",
 		"/var/www/html/cake_2_0/app/Config/bootstrap.php",
 		"/var/www/html/cake_2_0/app/Controller/AppController.php",
@@ -641,7 +606,6 @@
 		"/var/www/cinema/app/Controller/MoviesController.php",
 		"/var/www/cinema/app/View/Movies/view.ctp",
 		"/var/www/cinema2/app/Config/bootstrap.php",
-		"/var/www/cinema2/app/Controller/AppController.php",
 		"/var/www/cinema2/app/Config/core.php",
 		"/var/www/html/cake_2_0/lib/Cake/Console/Templates/skel/Config/bootstrap.php",
 		"/var/www/cinema/app/View/Posts/view.ctp",
@@ -735,32 +699,7 @@
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/mystyle.sty",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex",
-		"/home/matteo/Documents/Scienza/Latex/Poligon/entityRelationshipTest.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/abstract.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
-		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/tex/MHG_algorithm.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/swap_kernel.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/Corrispondenza.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/random_walk.tex",
-		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/mystyle.sty",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/parallel_tempering_presentation.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/quicky.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/myBooks.bib",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/myrefs.bib",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/settings/classDetails.sty",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/.gitignore",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/README.md",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/eccaNoNotes.bst",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/ecca_pl.bst",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/summary.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/simulations.bib",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/rblarba.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/matteo_master.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/simulationsResults.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr2.cls",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.lof",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.toc"
+		"/home/matteo/Documents/Scienza/Latex/Poligon/entityRelationshipTest.tex"
 	],
 	"find":
 	{
@@ -778,6 +717,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"show",
+			"Show",
+			"Theatre",
+			"theatre",
+			"Show",
+			"show",
+			"user",
+			"User",
+			"post",
+			"Post",
+			"movie",
+			"Movie",
+			"został",
+			"film",
+			"movie",
+			"Movie",
+			"movie",
+			"film",
+			"movie",
+			"Movie",
+			"Post",
+			"post",
 			"<p><small>Produced: <?php echo $movie['Movie']['year_of_production']; ?></small></p>\n<p><small>Directed: <?php echo $movie['Movie']['director']; ?></small></p>\n<p><small>Genre: 	<?php echo $movie['Movie']['genre']; ?></small></p>",
 			"Post",
 			"post",
@@ -883,29 +844,7 @@
 			"translatorFromLexicOrderToTranspositions",
 			"strategyNumber",
 			"tmpStrategyNumber",
-			"strategyNumber",
-			"swapStrategy",
-			"updateSwapUProbs",
-			"OMG3",
-			"OMG",
-			"OMG4",
-			"updateSwapUProbs",
-			"lastSwapUProbs",
-			"show",
-			"proposeLogsOfUMeasures",
-			"updateSwapUProbs",
-			"proposeLogsOfUMeasures",
-			"updatedStates",
-			"prepareSimulation",
-			"getIteration",
-			"getStates",
-			"temperatures",
-			"iteration",
-			"show",
-			"tmpTemp",
-			"tmpNoOfIterations",
-			"noOfIterations",
-			"algorithmInitializator"
+			"strategyNumber"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -913,6 +852,24 @@
 		"regex": false,
 		"replace_history":
 		[
+			"performance",
+			"Performance",
+			"Movie",
+			"movie",
+			"Theatre",
+			"theatre",
+			"show",
+			"Show",
+			"theatre",
+			"Theatre",
+			"show",
+			"Show",
+			"theatre",
+			"Theatre",
+			"theatre",
+			"Theatre",
+			"Movie",
+			"movie",
 			"Movie",
 			"movie",
 			"Movie",
@@ -1022,25 +979,7 @@
 			"lastStates",
 			"stateSpace",
 			"swapIwithJ",
-			"lastSwapUProbabilities",
-			"strategyNo",
-			"jes",
-			"permutation",
-			"lastProposalSwapProbabilities",
-			"lastSwapProbabilities",
-			"lastProposalLogUnDensities",
-			"lastStatesLogUnDensities",
-			"statesUpdatedByRandomWalk",
-			"stateUpdatedByRandomWalk",
-			"noOfLexicals",
-			"lexicals",
-			"translateLexicalToTranspostions",
-			"massTranslateLexicalToTranspostions",
-			"noOfLastPermutation",
-			"proposalCovariances",
-			"proposalCovariancesCholeskised",
-			"function(){}",
-			"noOfIterations"
+			"lastSwapUProbabilities"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -1051,29 +990,32 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/var/www/cinema2/buildingTables.sql",
+					"file": "Model/Movie.php",
 					"settings":
 					{
-						"buffer_size": 240,
+						"buffer_size": 814,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								135,
-								135
+								72,
+								72
 							]
 						],
 						"settings":
 						{
-							"auto_name": "CREATE TABLE movies (",
-							"syntax": "Packages/SQL/SQL.tmLanguage"
+							"encoding_helper_confidence": 0.830044698953,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1083,276 +1025,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Model/Movie.php",
+					"file": "Model/Theatre.php",
 					"settings":
 					{
-						"buffer_size": 246,
+						"buffer_size": 414,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								70,
-								70
+								322,
+								322
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Controller/MoviesController.php",
-					"settings":
-					{
-						"buffer_size": 1304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
+							"encoding_helper_confidence": 0.857639270062,
+							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
-							"encoding_helper_loading": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 5,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "aaafd",
-							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "View/Movies/index.ctp",
-					"settings":
-					{
-						"buffer_size": 2300,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								326,
-								326
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "View/Movies/view.ctp",
-					"settings":
-					{
-						"buffer_size": 505,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								448,
-								448
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "View/Movies/add.ctp",
-					"settings":
-					{
-						"buffer_size": 375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								375,
-								375
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 7,
-					"file": "Model/Post.php",
-					"settings":
-					{
-						"buffer_size": 638,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								637,
-								637
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Controller/PostsController.php",
-					"settings":
-					{
-						"buffer_size": 4223,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2205,
-								2205
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 969.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Controller/UsersController.php",
-					"settings":
-					{
-						"buffer_size": 3714,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2410,
-								2410
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 969.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Model/User.php",
-					"settings":
-					{
-						"buffer_size": 2014,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								545,
-								545
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1362,11 +1053,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "View/Posts/add.ctp",
+					"buffer": 2,
+					"file": "Model/Performance.php",
 					"settings":
 					{
-						"buffer_size": 683,
+						"buffer_size": 435,
 						"regions":
 						{
 						},
@@ -1379,7 +1070,42 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage"
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "GB2312",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Controller/PerformancesController.php",
+					"settings":
+					{
+						"buffer_size": 1502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.774595344801,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1407,18 +1133,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1442,6 +1161,70 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"mov",
+				"Model/Movie.php"
+			],
+			[
+				"movie",
+				"Controller/MoviesController.php"
+			],
+			[
+				"movieinde",
+				"View/Movies/index.ctp"
+			],
+			[
+				"theatrein",
+				"View/Theatres/index.ctp"
+			],
+			[
+				"app",
+				"Model/AppModel.php"
+			],
+			[
+				"appmo",
+				"Model/AppModel.php"
+			],
+			[
+				"show",
+				"Model/Show.php"
+			],
+			[
+				"modelmovi",
+				"Model/Movie.php"
+			],
+			[
+				"movieview",
+				"View/Movies/view.ctp"
+			],
+			[
+				"modeluser",
+				"Model/User.php"
+			],
+			[
+				"modelmo",
+				"Model/Movie.php"
+			],
+			[
+				"moviecon",
+				"Controller/MoviesController.php"
+			],
+			[
+				"useradd",
+				"View/Users/add.ctp"
+			],
+			[
+				"movieadd",
+				"View/Movies/add.ctp"
+			],
+			[
+				"inde",
+				"View/Movies/index.ctp"
+			],
+			[
+				"appco",
+				"Controller/AppController.php"
+			],
 			[
 				"user",
 				"Model/User.php"
@@ -1505,10 +1288,6 @@
 			[
 				"usersvie",
 				"www/html/cake_2_0/app/View/Users/view.ctp"
-			],
-			[
-				"app",
-				"www/cinema/app/Model/AppModel.php"
 			],
 			[
 				"appc",
