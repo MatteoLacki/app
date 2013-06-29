@@ -1,11 +1,9 @@
-<!-- File: /app/View/Movies/index.ctp -->
-
-<h1> Movies </h1>
+<h1> Filmy </h1>
 
 <!--  This adds a "Add Movie" button  -->
 <?php 
     echo $this->Html->link(
-        'Add a Movie',
+        'Dodaj Film',
         array( 'controller' => 'movies', 'action' => 'add' )
     ); 
 ?>
@@ -47,7 +45,7 @@
         <td>
             <?php 
                 echo $this->Html->link(
-                    'Edit', 
+                    'Modyfikuj', 
                     array(
                         'action' => 'edit', 
                         $movie['Movie']['id']
@@ -56,7 +54,7 @@
             ?>
             <?php 
                 echo $this->Form->postLink(
-                    'Delete',
+                    'Usuń',
                     array( 
                         'action' => 'delete',
                         $movie['Movie']['id']

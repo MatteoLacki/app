@@ -35,12 +35,33 @@ class MoviesController extends AppController {
             } else {
                 $this->Session->setFlash(__('Nie mogę zapisać filmu.'));
             }           
-        } /*else {
-            $this->Session->setFlash(__('Not a movie?'));
-            debug($this->request->data);
-        }*/
+        } 
     }
 
+    public function edit($id = null) {
+         if (!$id) {
+            throw new NotFoundException(__('Nie obrano identyfikatora filmu.'));
+        }
+
+        $movie = $this->Movie->findById($id);
+        if (!$movie) {
+            throw new NotFoundException(__('Obrano identyfikator spoza zbioru istniejących wartości.'));
+        }
+
+        if ($this->request->is('post') || $this->request->is('put')) {
+            $this->Movie->id = $id;
+            if ($this->Movie->save($this->request->data)) {
+                $this->Session->setFlash('Modyfikacja Filmu Została Wykonana');
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash('Modyfikacja Filmu Zakończona Porażką');
+            }
+        }
+
+        if (!$this->request->data) {
+            $this->request->data = $movie;
+        }
+    }
 
 
 }

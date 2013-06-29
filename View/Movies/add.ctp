@@ -12,6 +12,6 @@
 	?>
 	</fieldset>
 	  <!-- to generuje guzik potwierdzenia i zamyka sesję formularza. Opcjonalnie wyrzuca tekst. --> 
-	<?php echo $this->Form->end('Zapisano nowy film'); ?>
+	<?php echo $this->Form->end('Zapisz nowy film'); ?>
 </div>
 		

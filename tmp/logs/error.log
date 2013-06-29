@@ -1024,3 +1024,21 @@ Stack Trace:
 #3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-06-29 14:18:08 Error: [NotFoundException] Obrano identyfikator spoza zbioru istniejących wartości.
+Request URL: /cinema2/movies/edit/1
+Stack Trace:
+#0 [internal function]: MoviesController->edit('1')
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(MoviesController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-29 14:18:19 Error: [NotFoundException] Obrano identyfikator spoza zbioru istniejących wartości.
+Request URL: /cinema2/movies/edit/1
+Stack Trace:
+#0 [internal function]: MoviesController->edit('1')
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(MoviesController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MoviesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
