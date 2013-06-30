@@ -1,11 +1,28 @@
-<!-- File: /app/View/Users/edit.ctp -->
+<h1>Zmieniamy Się!</h1>
 
-<h1>Edit User</h1>
-<?php
-    echo $this->Form->create('User');
-    echo $this->Form->input('username');
-    echo $this->Form->input('password', array('rows' => '3'));
-    echo $this->Form->input('id', array('type' => 'hidden'));
-    echo $this->Form->end('Save User');
- ?>   
- <h2>Trying to manipulate it all, aren't we? Sneaky we are.</h2>
+<div class="performances form">
+	<?php echo $this->Form->create('User'); ?>
+	<fieldset>	
+		<?php
+		    echo $this->Form->input('username', array('label' => 'Nazwa Użytkownika'));
+		    echo $this->Form->input('password', array('label' => 'Hasło'));
+		    echo $this->Form->input('id', array('type' => 'hidden'));
+		 ?>   
+	</fieldset>	
+	<?php echo $this->Form->end('Zmieńmy Obliczę!'); ?>	 
+</div>
+<div class="actions">
+	<h3> Działania </h3>
+	<ul>
+		<li>
+			<?php
+					echo $this->Html->link(
+                        'Wróć do Spisu Użytkowników', 
+                        array(
+                        	'action' => 'index'
+						)
+                    );
+			?>
+		</li>
+	</ul>
+</div>

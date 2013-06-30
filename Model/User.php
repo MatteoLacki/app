@@ -65,15 +65,15 @@ class User extends AppModel {
     }
 
     public function beforeSave($options = array() ) {
-    		//Checks if the password is set. If it's not there, we cannot hash it.
+    			//Sprawdzamy, czy występuje hasło.
     	if (isset($this->data[$this->alias]['password'])) {
-    			// Here we rewrite the password s.t. the hash resigns the old one.
+    			// Haszowanie Hasła
     		$this->data[$this->alias]['password'] = 
     			AuthComponent::password(
     				$this->data[$this->alias]['password']
     			);
     	}
-    		// This will consent the change of password. 
+
     	return true;
     }
 

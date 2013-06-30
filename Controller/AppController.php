@@ -47,7 +47,7 @@ class AppController extends Controller {
 	    		'controller' 	=> 'performances',
 	    		'action'		=> 'index'	    		
 	    	),
-	    	'authError'		=>'You are not really allowed to access that page without authentication.',
+	    	'authError'		=>'Nie można wejść na tę stronę nie przedstawiwszy się uprzednio!',
 	    	'authorize'		=> array('Controller')
 	    )
 	);
@@ -56,23 +56,58 @@ public function beforeFilter(){
 		//  tells the AuthComponent to not require a login for all index and view actions, in every controller. We want our visitors to be able to read and list the entries without registering in the site.
 
 		// Simply these fields can be seen without authentification. Simple.
-		// This works for any controller.
+	// This works for any controller.
 		$this->Auth->allow('index', 'view');
-
-		// Here we give a method sending variables () to the view.
-		// loggedIn() is a function returning true, if the user is logged in.
 		$this->set('logged_in', $this->Auth->loggedIn());
-		// user() sends all the information about the current user, which is simply the User.
-		$this->set('current_user', $this->Auth->user());
+
+		$current_user = $this->Auth->user();
+		
+		$this->set('current_user', $current_user);
+
+		$anyone   = isset($current_user['id']);
+		$noone    = !$anyone;
+		$admin    = false;
+		$cashier  = false;
+		$customer = false;
+
+		if ( $anyone ) {
+
+		    switch ($current_user['role']) {
+		        case 'admin':
+		            $admin    = true;
+		            break;
+		        
+		        case 'cashier':
+		            $cashier  = true;    
+		            break;
+
+		        case 'customer':
+		            $customer = true;    
+		            break;
+		    }
+		}
+
+		$adminOrCashier = $admin || $cashier;
+
+		$logged = array(
+			'anyone' 	=> $anyone,
+			'noone'		=> $noone,
+			'admin'		=> $admin,
+			'cashier'	=> $cashier,
+			'customer'	=> $customer,
+			'adminOrCashier'=> $adminOrCashier
+		);		
+
+		$this->set('logged', $logged);
 
 	}
 
 	public function isAuthorized($user) {
-		// Users with role admin will be able to access any url in the site when logged in
+			// Jeśli mamy admina, to jemu wolno wszystko.
 		if (isset($user['role']) && $user['role'] === 'admin') {
 			return true;
 		}
-		// Default deny
+			// A jak nie, to z reguły nic nie wolno. To będzie nadpisywane przez odziedziczone kontrolery.
 		return false;
 	}
 }

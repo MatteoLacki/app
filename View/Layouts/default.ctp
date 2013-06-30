@@ -38,9 +38,71 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 <body>
+<!-- 
+	<div id="myMenu">
+		<div id="leftPart">
+			<div class="actions">
+					<ul>
+						<li>
+							<?php
+									echo $this->Html->link(
+				                        'Sfera Użytkownika', 
+				                        array(
+				                        	'controller'=> 'users',
+				                        	'action' => 'index'
+										)
+				                    );
+							?>
+						</li>
+			</div>
+		</div>
+		<div id="rightPart">	
+			<div class="actions">
+					<li>
+						<?php
+								echo $this->Html->link(
+			                        'Sfera Seansu', 
+			                        array(
+			                        	'controller'=> 'performances',
+			                        	'action' => 'index'
+									)
+			                    );
+						?>
+					</li>
+				</ul>	
+			</div>
+		</div>		
+	</div>		
+	 -->
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+<!-- 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1> -->
+			<div class="actions">
+					<ul>
+						<li>
+							<?php
+									echo $this->Html->link(
+				                        'Sfera Użytkownika', 
+				                        array(
+				                        	'controller'=> 'users',
+				                        	'action' => 'index'
+										)
+				                    );
+							?>
+					</li>
+					<li>
+						<?php
+								echo $this->Html->link(
+			                        'Sfera Seansu', 
+			                        array(
+			                        	'controller'=> 'performances',
+			                        	'action' => 'index'
+									)
+			                    );
+						?>
+					</li>
+				</ul>	
+			</div>
 		</div>
 		<div id="content">
 
@@ -48,21 +110,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
  				
 			<div style='text-align: right;'>
 				<?php if ($logged_in): ?>
-					Welcome  
-					<?php echo $current_user['username'];?>. 
+					Niech mnie kule biją! Toż to     
+					<?php echo $current_user['username'];?>!
 					<?php 
 						echo $this->Html->link(
-							'Logout', 
+							'Chcesz Uciekać?', 
 							array(
 								'controller'=> 'users',
 								'action' 	=> 'logout'
 							)
 						); 
-					?>
+					?> 
 				<?php else: ?>
 					<?php 
 						echo $this->Html->link(
-							'Login', 
+							'Przedstaw Się', 
 							array(
 								'controller'=> 'users',
 								'action' 	=> 'login '
@@ -71,13 +133,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					?>
 				<?php endif; ?>
 			</div>
-<!-- 
-			<?php print_r($current_user);?>
-
-			<?php 
-				$current_user['Sex'] = 'Male';				
-				print_r($current_user);
-			?> -->
 
 			<?php echo $this->Session->flash(); ?>
 			<!-- This is a flash message that regards authorisation -->
@@ -86,14 +141,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
+<!-- 
 			<?php echo $this->Html->link(
 					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					'http://www.cakephp.org/',
 					array('target' => '_blank', 'escape' => false)
 				);
-			?>
+			?> -->
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
+

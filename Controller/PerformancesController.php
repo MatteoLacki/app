@@ -83,6 +83,37 @@ class PerformancesController extends AppController {
         $this->redirect(array('controller' => 'orders', 'action' => 'add', $id));
     }
 
+
+    public function isAuthorized($user) {
+
+    /* Niepotrzebne = klasa matka to sprawdzi.
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true;
+        }
+    */
+
+        if (isset($user['role']) && $user['role'] === 'cashier') {
+            if ( in_array($this->action, array('view', 'delete', 'edit') ) ) {
+                return true;
+            }    
+        }    
+
+        if (isset($user['role']) && $user['role'] === 'customer') {
+
+            $this->Session->setFlash('Rola to Klient');
+
+            if ( in_array($this->action, array('view', 'buy') ) ) {
+
+                $this->Session->setFlash('Rola to bla');
+                return true;
+            }    
+        }
+
+            //Ostatnia instancja autoryzacji - klasa matka
+        return parent::isAuthorized($user);
+    }
+
+
 }
 
 ?>

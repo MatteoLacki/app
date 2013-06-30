@@ -1,4 +1,4 @@
-<h1>Dodanie Nowego Zamówienia</h1>
+<h3>Dodanie Nowego Zamówienia</h3>
 <div class="orders form">
 
 	<?php echo $this->Form->create('Order'); ?>
@@ -9,7 +9,7 @@
 	?>
 
 	</fieldset>
-	<?php echo $this->Form->end('Zapisz Nowy Seans.'); ?>
+	<?php echo $this->Form->end('Potwierdź Nowe Zamówienie'); ?>
 
 
 </div>
@@ -18,12 +18,12 @@
 	<ul>
 		<li>
 			<?php
-					echo $this->Html->link(
-                        'Wróć do Spisu Zamówień', 
-                        array(
-                        	'action' => 'index'
-						)
-                    );
+				echo $this->Html->link(
+                    'Wróć do Spisu Zamówień', 
+                    array(
+                    	'action' => 'index'
+					)
+                );
 			?>
 		</li>
 	</ul>

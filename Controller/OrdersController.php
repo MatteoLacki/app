@@ -5,7 +5,10 @@ class OrdersController extends AppController {
 
     public function index() {
             //To wyeksportuje do View wypis (array)
+        $this->Order->recursive = 2;
         $this->set('orders', $this->Order->find('all'));
+
+     /*   $this->set('bla', $this->Order->Performance->find('all'));*/
     }
 
 
@@ -23,12 +26,12 @@ class OrdersController extends AppController {
     }
 
 
-    public function add($id) {
+    public function add($performanceId) {
 
         if ($this->request->is('post')) {
                 // To uzupełnia pobranie informacji (czyli array data) od dodatkowe informacje.
             $this->request->data['Order']['user_id'] = $this->Auth->user('id');
-            $this->request->data['Order']['performance_id'] = $id;
+            $this->request->data['Order']['performance_id'] = $performanceId;
 
             if ($this->Order->save($this->request->data)) {
                 $this->Session->setFlash('Zamówienie zostało zapisane.');
@@ -83,6 +86,19 @@ class OrdersController extends AppController {
         if (!$this->request->data) {
             $this->request->data = $order;
         }
+    }
+
+    public function isAuthorized($user) {
+
+        if (isset($user['role']) && $user['role'] === 'customer') {
+
+            if ( in_array($this->action, array('add') ) ) {
+                return true;
+            }    
+        }
+
+            //Ostatnia instancja autoryzacji - klasa matka
+        return parent::isAuthorized($user);
     }
 
 

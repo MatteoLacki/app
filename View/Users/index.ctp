@@ -1,11 +1,7 @@
- <!-- File: /app/View/users/index.ctp -->
+<h3>Użytkownicy Kina - Łączcie Się!</h3>
 
-<h1>Blog users</h1>
-
-
-<!--  This adds a "Add user" button  -->
 <?php echo $this->Html->link(
-    'Add User',
+    'Dodaj Użytkownika',
     array('controller' => 'users', 'action' => 'add')
 ); ?>
 
@@ -13,7 +9,7 @@
     <tr>
         <th>Id</th>
         <th>Username</th>
-        <th>password</th>
+        <th>Rola w Systemie</th>
         <th>Actions</th>
         <th>Created</th>
     </tr>
@@ -36,19 +32,16 @@
                 ); 
             ?>
         </td>
-        <td><?php echo $user['User']['password']; ?></td>
+        <td><?php echo $user['User']['role']; ?></td>
         <td>
             <?php if( $current_user['id'] === $user['User']['id'] || $current_user['role'] === 'admin' ): ?>    
                 <?php 
-                    // postLink creates a link that uses Javascript to do a user request deleting our user
-                    // postLink is a fucking function!
                     echo $this->Form->postLink(
                         'Delete',
                         array( 
                             'action' => 'delete',
                             $user['User']['id']
                         ),
-                        // FormHelper prompts the user with a JavaScript confirmation dialog
                         array(
                             'confirm'   => 'Are you sure?'
                         )

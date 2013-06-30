@@ -2,11 +2,11 @@
 	class UsersController extends AppController {
 		
 		public $name = 'Users';
+
 		public function beforeFilter() {
-			// What is that? Probably some kind of inheritance. We extend the AppController.
 			parent::beforeFilter();
 			// Permits the uset to use the add operation only before loggin in.
-			$this->Auth->allow('add');
+			$this->Auth->allow('add','login','logout');
 		}
 
 		public function isAuthorized($user) {
@@ -41,7 +41,13 @@
 
 		public function logout(){
 			// In the appControl we set where the logout will end up.
-			$this->redirect($this->Auth->logout());
+			if($this->Auth->user())
+    		{
+				$this->redirect($this->Auth->logout());
+			} else{
+				$this->redirect(array('controller'=>'performances','action' => 'index'));
+        		$this->Session->setFlash(__('Not logged in'), 'default', array(), 'auth');
+			}	
 		}
 
 

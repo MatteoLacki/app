@@ -6,19 +6,27 @@
         array( 'controller' => 'orders', 'action' => 'add' )
     ); 
 ?>
+<!-- 
+<?php 
+    echo print_r($orders)
+?>
+ -->
+
 
 <table>
     <tr>
-        <th>Id</th><th>Tytuł Filmu</th><th>Nazwa Sali</th><th>Dodano</th><th>Zmodyfikowano</th><th>Możliwe akcje</th>
+        <th>Id</th><th>User Id</th><th>Tytuł Filmu</th><th>Nazwa Sali</th><th>Zarezerwowano</th><th>Koszt Fotela</th><th>Całkowity Koszt</th><th>Ostatnia Zmiana</th><th>Możliwe akcje</th>
     </tr>
 
     <?php foreach ($orders as $order): ?>
     <tr>
         <td><?php echo $order['Order']['id']; ?></td>
+        <td><?php echo $order['User']['id']; ?></td>
+        <td><?php echo $order['Performance']['Movie']['title']; ?></td>
         <td>
             <?php 
                 echo $this->Html->link(
-                    $order['Movie']['title'], 
+                    $order['Performance']['Theatre']['name'], 
                     array(
                         'action' => 'view', 
                         $order['Order']['id']
@@ -26,8 +34,26 @@
                 );
             ?>
         </td>
-        <td><?php echo $order['Theatre']['name']; ?></td>
-        <td><?php echo $order['Order']['created']; ?></td>
+        <td>
+            <?php 
+                $ileMiejsc = $order['Order']['seats_reserved']; 
+                if ( $ileMiejsc === 1 ) {
+                    echo $ileMiejsc . ' Fotel';
+                } elseif ( in_array($ileMiejsc, array( 2,3,4 ) ) ) {
+                    echo $ileMiejsc . ' Fotele';
+                } else {
+                    echo $ileMiejsc . ' Foteli';
+                }
+
+            ?> 
+
+        </td>
+        <td>
+            <?php 
+                $seatPrice = $order['Performance']['seat_price']; 
+                echo $seatPrice;
+            ?> zł</td>
+        <td><?php echo $seatPrice*$ileMiejsc; ?> zł</td>
         <td><?php echo $order['Order']['modified']; ?></td>
         <td>
             <?php 
