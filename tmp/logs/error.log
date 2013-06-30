@@ -2053,3 +2053,235 @@ Stack Trace:
 #3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-06-30 21:46:54 Error: Fatal Error (1): Cannot access empty property in [/var/www/cinema2/lib/Cake/View/View.php, line 853]
+2013-06-30 21:46:54 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/cinema...', 853)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 21:48:18 Error: Fatal Error (1): Cannot access empty property in [/var/www/cinema2/lib/Cake/View/View.php, line 853]
+2013-06-30 21:48:18 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/cinema...', 853)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 21:48:41 Error: Fatal Error (1): Cannot access empty property in [/var/www/cinema2/lib/Cake/View/View.php, line 853]
+2013-06-30 21:48:41 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/cinema...', 853)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 21:48:47 Error: Fatal Error (1): Cannot access empty property in [/var/www/cinema2/lib/Cake/View/View.php, line 853]
+2013-06-30 21:48:47 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/cinema...', 853)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/cinema...', 853, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 21:51:56 Error: Fatal Error (4): syntax error, unexpected T_IF in [/var/www/cinema2/app/Controller/OrdersController.php, line 99]
+2013-06-30 21:51:56 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 99, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 99, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 22:36:38 Error: Fatal Error (1): Call to a member function testingTheatre2() on a non-object in [/var/www/cinema2/app/Model/Order.php, line 72]
+2013-06-30 22:36:38 Error: [FatalErrorException] Call to a member function testingTheatre2() on a non-object
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 22:37:21 Error: Fatal Error (1): Call to a member function testingTheatre2() on a non-object in [/var/www/cinema2/app/Model/Order.php, line 72]
+2013-06-30 22:37:21 Error: [FatalErrorException] Call to a member function testingTheatre2() on a non-object
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 22:37:27 Error: Fatal Error (1): Call to a member function testingTheatre2() on a non-object in [/var/www/cinema2/app/Model/Order.php, line 72]
+2013-06-30 22:37:27 Error: [FatalErrorException] Call to a member function testingTheatre2() on a non-object
+Request URL: /cinema2/orders/edit/3
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 22:42:00 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/var/www/cinema2/app/Model/Order.php, line 72]
+2013-06-30 22:42:00 Error: [FatalErrorException] Call to a member function findById() on a non-object
+Request URL: /cinema2/orders/edit/3
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 72, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 22:47:47 Error: Fatal Error (1): Call to a member function testingTheatre2() on a non-object in [/var/www/cinema2/app/Model/Order.php, line 73]
+2013-06-30 22:47:47 Error: [FatalErrorException] Call to a member function testingTheatre2() on a non-object
+Request URL: /cinema2/orders/edit/3
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 73)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 73, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 73, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 22:51:08 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/var/www/cinema2/app/Model/Theatre.php, line 25]
+2013-06-30 22:51:08 Error: [FatalErrorException] Call to a member function findById() on a non-object
+Request URL: /cinema2/orders/edit/3
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 25, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 25, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 23:04:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'seats' in 'field list'
+Request URL: /cinema2/orders/edit/2
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('?SELECT ?seats ...', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('?SELECT ?seats ...', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('?SELECT ?seats ...')
+#4 [internal function]: DboSource->query('?SELECT ?seats ...')
+#5 /var/www/cinema2/lib/Cake/Model/Model.php(3062): call_user_func_array(Array, Array)
+#6 /var/www/cinema2/app/Model/Order.php(81): Model->query('?SELECT ?seats ...')
+#7 /var/www/cinema2/app/Controller/OrdersController.php(105): Order->lastChance('2')
+#8 [internal function]: OrdersController->edit('2')
+#9 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-06-30 23:06:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'seats' in 'field list'
+Request URL: /cinema2/orders/edit/3
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('?SELECT ?seats ...', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('?SELECT ?seats ...', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('?SELECT ?seats ...')
+#4 [internal function]: DboSource->query('?SELECT ?seats ...')
+#5 /var/www/cinema2/lib/Cake/Model/Model.php(3062): call_user_func_array(Array, Array)
+#6 /var/www/cinema2/app/Model/Order.php(81): Model->query('?SELECT ?seats ...')
+#7 /var/www/cinema2/app/Controller/OrdersController.php(105): Order->lastChance('3')
+#8 [internal function]: OrdersController->edit('3')
+#9 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-06-30 23:15:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lastChance' at line 1
+Request URL: /cinema2/orders/edit/2
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('lastChance', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('lastChance', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('lastChance', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('lastChance', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/OrdersController.php(105): Model->__call('lastChance', Array)
+#6 /var/www/cinema2/app/Controller/OrdersController.php(105): Order->lastChance('2')
+#7 [internal function]: OrdersController->edit('2')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 23:15:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lastChance' at line 1
+Request URL: /cinema2/orders/edit/2
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('lastChance', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('lastChance', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('lastChance', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('lastChance', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/OrdersController.php(105): Model->__call('lastChance', Array)
+#6 /var/www/cinema2/app/Controller/OrdersController.php(105): Order->lastChance('2')
+#7 [internal function]: OrdersController->edit('2')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 23:15:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lastChance' at line 1
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('lastChance', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('lastChance', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('lastChance', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('lastChance', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/OrdersController.php(105): Model->__call('lastChance', Array)
+#6 /var/www/cinema2/app/Controller/OrdersController.php(105): Order->lastChance('1')
+#7 [internal function]: OrdersController->edit('1')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 23:19:45 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/cinema2/app/Controller/OrdersController.php, line 105]
+2013-06-30 23:19:45 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 105, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 105, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 23:19:51 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/cinema2/app/Controller/OrdersController.php, line 105]
+2013-06-30 23:19:51 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 105, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 105, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 23:20:12 Error: Fatal Error (1): Call to undefined function theatreSeatsNo() in [/var/www/cinema2/app/Controller/OrdersController.php, line 103]
+2013-06-30 23:20:12 Error: [FatalErrorException] Call to undefined function theatreSeatsNo()
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cinema...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cinema...', 103, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cinema...', 103, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 23:22:38 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cinema2/app/Controller/OrdersController.php, line 105]
+2013-06-30 23:22:38 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cinema2/orders/edit/1
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 105, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 105, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

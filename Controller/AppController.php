@@ -103,7 +103,6 @@ public function beforeFilter(){
 	}
 
 	public function isAuthorized($user) {
-		$this->Session->setFlash('Sprawdzamy działanie AppController isAuthorized!');
 			// Jeśli mamy admina, to jemu wolno wszystko.
 		if (isset($user['role']) && $user['role'] === 'admin') {
 			return true;

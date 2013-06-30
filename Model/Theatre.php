@@ -20,6 +20,12 @@ class Theatre extends AppModel {
 		)
     );
 
+	public function testingTheatre2( $bla ) {
+
+		return $this->Theatre->findById($bla);
+	}
+
+
 }
 
 ?>

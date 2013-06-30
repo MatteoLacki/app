@@ -23,7 +23,11 @@ class Order extends AppModel {
 			'required' 		=> array(
 				'rule' 		=> array('notEmpty'),
 				'message' 	=> 'Zważ na konieczność zaznaczenia tego, czy dane zamówienie zostałe już przyjęte.'
-			)
+			)/*,
+			'No Overfill'	=> array(
+				'rule'		=> 'noOverfill',
+				'message'	=> 'Nie No Panie - Ludzie To Się W Kinie Nie Zmieszczą!'
+			)*/
 		),
 
     );
@@ -63,6 +67,47 @@ class Order extends AppModel {
 		}
 	}
 
-	
+	public function theatreSeatsNo( $id ) {
+		
+		$sql = 
+			"	SELECT 	seats 
+				FROM 	
+					(	select 	theatre_id
+						FROM 	orders as o
+						JOIN 	performances as p
+						ON 		o.performance_id 	= p.id	
+						WHERE 	o.id = ".$id." ) as tmp
+					JOIN 	theatres as t
+					ON 		t.id = tmp.theatre_id	
+					;
+			";
+
+		$result = $this->query($sql);
+		$result = $result[0]['t']['seats'];
+
+		if ($result === NULL) {
+			return(0);
+		} else {
+			return($result);
+		}
+
+		return $result;
+	}
+
+
+	public function testingTheatre() {
+/*		return $this->Order->Performance->Theatre->testingTheatre2( 3 );*/
+
+
+	}
+
+/*
+	public function noOverfill( $data ) {
+
+		if ($data['theatre_id'] === )
+
+		return false;
+	}
+*/
 }
 ?>

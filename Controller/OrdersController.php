@@ -17,7 +17,9 @@ class OrdersController extends AppController {
                 case 'admin':
                 case 'cashier':
                     $this->set('orders', $this->Order->find('all'));
-                    $this->set('totalSeats', $this->Order->totalSeats2(2));                /*
+                    $this->set('totalSeats', $this->Order->totalSeats2(2)); 
+                    /*$this->set('informacja', $this->Order->totalSeats2(2));                */
+                    /*
                     $this->set('seatsWow', $this->Order->Performance->totalSeats2(2));                */
                     break;
     
@@ -89,15 +91,26 @@ class OrdersController extends AppController {
     public function edit($id = null) {
          if (!$id) {
             throw new NotFoundException(__('Nie obrano identyfikatora zamówienia.'));
-        }
-
+        }   
+        
         $order = $this->Order->findById($id);
+
         if (!$order) {
-            throw new NotFoundException(__('Obrano identyfikator spoza zbioru istniejących wartości.'));
+            throw new NotFoundException(__('Obrano identyfikator spoza bazy danych.'));
         }
+   
+        $seatsOccupied      = $this->Order->totalSeats2($id);
+        $theatreHasSeats    = $this->Order->theatreSeatsNo($id);
+
+        $this->set('seatsOccupied', $seatsOccupied);   
+        $this->set('reserving', $order['Order']['seats_reserved']);
+        $this->set('orderInfo', $theatreHasSeats);  
+        $this->set('noOverfill', $theatreHasSeats >= $seatsOccupied + $order['Order']['seats_reserved']);
+
 
         if ($this->request->is('post') || $this->request->is('put')) {
             $this->Order->id = $id;
+            $this->Session->setFlash('Dorsz!');
             if ($this->Order->save($this->request->data)) {
                 $this->Session->setFlash('Modyfikacja Zamówienia Została Wykonana');
                 $this->redirect(array('action' => 'index'));

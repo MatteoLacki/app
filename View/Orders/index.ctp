@@ -1,6 +1,4 @@
 <h1> Zamówienia </h1>
-
-
 <?php 
     print_r($totalSeats);
 ?>

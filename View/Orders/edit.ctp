@@ -1,11 +1,13 @@
 <h1>Zmień Szczegóły Zamówienia</h1>
 <div class="orders form">
 
+
+		<?php echo $seatsOccupied; ?>:<?php echo $reserving; ?>:<?php echo $orderInfo; ?>
 	<?php echo $this->Form->create('Order'); ?>
 	<fieldset>
 
 	<?php
-		if ($logged['adminOrCashier']):
+		if ($logged['adminOrCashier'] && $noOverfill):
 			echo $this->Form->input('accepted', array('label' => 'ZAAKCEPTUJ ZAMÓWIENIE'));
 		elseif ($logged['customer']):
 			echo $this->Form->input('seats_reserved', array('label' => 'ZAAKCEPTUJ ZAMÓWIENIE'));
