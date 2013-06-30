@@ -99,12 +99,7 @@ class PerformancesController extends AppController {
         }    
 
         if (isset($user['role']) && $user['role'] === 'customer') {
-
-            $this->Session->setFlash('Rola to Klient');
-
             if ( in_array($this->action, array('view', 'buy') ) ) {
-
-                $this->Session->setFlash('Rola to bla');
                 return true;
             }    
         }

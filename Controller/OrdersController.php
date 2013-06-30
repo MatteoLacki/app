@@ -5,12 +5,33 @@ class OrdersController extends AppController {
 
     public function index() {
             //To wyeksportuje do View wypis (array)
-        $this->Order->recursive = 2;
-        $this->set('orders', $this->Order->find('all'));
 
-     /*   $this->set('bla', $this->Order->Performance->find('all'));*/
+
+        if ( $this->Auth->loggedIn() ) {
+                // To wywołuje bardzo obszerne przeszukanie bazy danych.        
+            $this->Order->recursive = 2;
+            
+            $whoAmI = $this->Auth->user('role');
+    
+            switch ($whoAmI) {
+                case 'admin':
+                case 'cashier':
+                    $this->set('orders', $this->Order->find('all'));                
+                    break;
+    
+                case 'customer':
+                    $this->set('orders', $this->Order->findAllByUserId($this->Auth->user('id')));        
+                    break;
+            }
+        }
+  /*      $this->set('orders', $this->Order->find('all'));      */
     }
 
+/*    public function user_index() {   
+        $this->Order->recursive = 2;
+        $this->set('orders', $this->Order->findAllByUserId($this->Auth->user('id')));
+    }
+*/
 
     public function view($id = null) {
         if (!$id) {
@@ -92,7 +113,7 @@ class OrdersController extends AppController {
 
         if (isset($user['role']) && $user['role'] === 'customer') {
 
-            if ( in_array($this->action, array('add') ) ) {
+            if ( in_array($this->action, array('add', 'edit', 'delete') ) ) {
                 return true;
             }    
         }

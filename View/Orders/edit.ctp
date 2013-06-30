@@ -4,11 +4,7 @@
 	<?php echo $this->Form->create('Order'); ?>
 	<fieldset>
 	<?php
-/*
-		echo $this->Form->input('movie_id', array('label' => 'Tytuł:'));
-		echo $this->Form->input('theatre_id', array('label' => 'Sala Kinowa:'));
-		echo $this->Form->input('date', array('label' => 'Data:'));
-		echo $this->Form->input('seat_price', array('label' => 'Cena Miejsca na Seansie:'));*/
+		echo $this->Form->input('seat_price', array('label' => 'Cena Miejsca na Seansie:'));
 	?>
 	</fieldset>
 	<?php echo $this->Form->end('Zapisz Zmiany w Szczegółach Zamówienia'); ?>

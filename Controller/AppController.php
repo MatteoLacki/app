@@ -47,7 +47,7 @@ class AppController extends Controller {
 	    		'controller' 	=> 'performances',
 	    		'action'		=> 'index'	    		
 	    	),
-	    	'authError'		=>'Nie można wejść na tę stronę nie przedstawiwszy się uprzednio!',
+	    	'authError'		=>'Nie Posiadasz Odpowiednich Uprawnień',
 	    	'authorize'		=> array('Controller')
 	    )
 	);

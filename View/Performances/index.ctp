@@ -1,5 +1,13 @@
 <h3> Zaplanowane Seanse </h3>
 <!-- $logged zostaje przekazane globalnie w beforeFilter w AppController  -->
+<?php 
+    if ( $logged['adminOrCashier']) {
+        echo $this->Html->link(
+            'Dodaj Seans',
+            array( 'controller' => 'performances', 'action' => 'add' )
+        ); 
+    }
+?>
 <table>
     <tr>
         <th>Id</th>

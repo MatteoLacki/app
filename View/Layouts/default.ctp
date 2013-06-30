@@ -101,6 +101,17 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			                    );
 						?>
 					</li>
+					<li>
+						<?php
+								echo $this->Html->link(
+			                        'Sfera Zamówień', 
+			                        array(
+			                        	'controller'=> 'orders',
+			                        	'action' => 'index'
+									)
+			                    );
+						?>
+					</li>
 				</ul>	
 			</div>
 		</div>

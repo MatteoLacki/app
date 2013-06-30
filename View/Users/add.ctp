@@ -28,8 +28,8 @@
 					'type' => 'password',
 					'label' => 'Potwierdź Hasło'
 				)
-			);
-
+			)
+/*
 			echo $this->Form->input(
 				'role', 
 				array(
@@ -40,7 +40,7 @@
 					),
 					'label' => 'Sort Petenta'
 				)
-			);
+			);*/
 
 		?>
 	</fieldset>

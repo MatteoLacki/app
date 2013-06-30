@@ -25,5 +25,27 @@
                     );
 			?>
 		</li>
+		<li>
+			<?php 
+                echo $this->Html->link(
+                    'Zarządzaj Filmami', 
+                    array(
+                        'controller'=> 'movies',
+                        'action'    => 'index'
+                    )
+                ); 
+			?>
+		</li>
+		<li>
+			<?php 
+                echo $this->Html->link(
+                    'Zarządzaj Salami', 
+                    array(
+                        'controller'=> 'theatres',
+                        'action'    => 'index'
+                    )
+                ); 
+			?>
+		</li>
 	</ul>
 </div>

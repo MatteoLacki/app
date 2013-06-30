@@ -26,42 +26,57 @@
                     );
 			?>
 		</li>
-		<li>
-            <?php 
-                echo $this->Html->link(
-                    'Modyfikuj', 
-                    array(
-                        'action' => 'edit', 
-                        $performance['Performance']['id']
-                    )
-                );
-            ?>
-        </li>       
-        <li>
-            <?php 
-                echo $this->Form->postLink(
-                    'Usuń',
-                    array( 
-                        'action' => 'delete',
-                        $performance['Performance']['id']
-                    ),
-                    array(
-                        'confirm'   => 'Czy aby na pewno?'
-                    )
-                );
-            ?>
-        </li>
-        <li>
-            <?php 
-                echo $this->Form->postLink(
-                    'Kup Nań Bilety',
-                    array( 
-                        'action' => 'buy',
-                        /*To przekazuje argument do funkcji buy*/
-                        $performance['Performance']['id']
-                    )
-                );
-            ?>
-        </li>
+        <?php if ( $logged['adminOrCashier']):?>
+    		<li>
+                <?php 
+                    echo $this->Html->link(
+                        'Modyfikuj', 
+                        array(
+                            'action' => 'edit', 
+                            $performance['Performance']['id']
+                        )
+                    );
+                ?>
+            </li>       
+            <li>
+                <?php 
+                    echo $this->Form->postLink(
+                        'Usuń',
+                        array( 
+                            'action' => 'delete',
+                            $performance['Performance']['id']
+                        ),
+                        array(
+                            'confirm'   => 'Czy aby na pewno?'
+                        )
+                    );
+                ?>
+            </li>
+        <?php elseif( $logged['customer']):?>
+            <li>
+                <?php 
+                    echo $this->Form->postLink(
+                        'Kup Nań Bilety',
+                        array( 
+                            'action' => 'buy',
+                            /*To przekazuje argument do funkcji buy*/
+                            $performance['Performance']['id']
+                        )
+                    );
+                ?>
+            </li>
+        <?php else:?>
+            <li>
+                <?php 
+                    echo $this->Html->link(
+                        'Przedstaw Się', 
+                        array(
+                            'controller'=> 'users',
+                            'action'    => 'login '
+                        )
+                    ); 
+                ?>
+            </li>
+        <?php endif;?>
 	</ul>
 </div>

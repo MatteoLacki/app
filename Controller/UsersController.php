@@ -33,7 +33,7 @@
 					//This redirects either to the page they weren't alllowed to. redirect works automatically here.
 					$this->redirect($this->Auth->redirect());
 				} else {
-					$this->Session->setFlash(__('Invalid username or password, try again. And then again and yet again thill the Kingdom shall come... No one can pass this!'));
+					$this->Session->setFlash(__('Hasło Niepoprawne'));
 				}	
 			}
 		}
@@ -60,19 +60,21 @@
 			$this->User->id = $id;
 			
 			if (!$this->User->exists()) {
-				throw new NotFoundException(__('Invalid user'));
+				throw new NotFoundException(__('Użytkownik to Ladaco i Nie Zobaczymy Go'));
 			}
 			$this->set('user', $this->User->read(null, $id));
 		}
 
 		public function add() {
 			if ($this->request->is('post')) {
+ 					//Przydziałowo każdy nowy użtykownik to klient. Administrator i tylko on może dokonać 
+				$this->request->data['User']['role'] = 'customer';
 				$this->User->create();
 				if ($this->User->save($this->request->data)) {
-					$this->Session->setFlash(__('The user has been saved'));
+					$this->Session->setFlash(__('Dodano Nowego Użytkownika'));
 					$this->redirect(array('action' => 'index'));
 				} else {
-					$this->Session->setFlash(__('The user could not be saved. Please, try again'));
+					$this->Session->setFlash(__('Dodania Użytkownika Nie Wdrożono!'));
 				}
 			}
 		}
@@ -81,14 +83,14 @@
 			$this->User->id = $id;
 	
 			if (!$this->User->exists()) {
-				throw new NotFoundException(__('Invalid user'));
+				throw new NotFoundException(__('Brak Identyfikatora Użtykownika'));
 			}
 			if ($this->request->is('post') || $this->request->is('put')) {
 				if ($this->User->save($this->request->data)) {
-					$this->Session->setFlash(__('The user has been saved'));
+					$this->Session->setFlash(__('Zapisano Zmiany Profilu Użytkownika'));
 					$this->redirect(array('action' => 'index'));
 				} else {
-					$this->Session->setFlash(__('The user could not be saved. Please, try again'));
+					$this->Session->setFlash(__('Zmian Nie Wdrożono!'));
 				}
 			} else {
 				$this->request->data = $this->User->read(null, $id);
@@ -102,13 +104,13 @@
 			}
 			$this->User->id = $id;
 			if (!$this->User->exists()) {
-				throw new NotFoundException(__('Invalid user'));
+				throw new NotFoundException(__('Użytkownika Nie Było Już Wcześniej'));
 			}
 			if ($this->User->delete()) {
-				$this->Session->setFlash(__('User deleted'));
+				$this->Session->setFlash(__('Użtykownik Usunięty'));
 				$this->redirect(array('action' => 'index'));
 			}
-			$this->Session->setFlash(__('User was not deleted'));
+			$this->Session->setFlash(__('Użtykownik To Ziółko i Nie Usuniemy Go'));
 		
 			$this->redirect(array('action' => 'index'));
 		}
@@ -124,6 +126,12 @@
         	}
     	}
     	*/ 
+
+/*    	public function see($id) {
+            // Przekierowanie do kreowania zakupów.
+            	$this->Session->setFlash(__('Drozd!'));
+    	    $this->redirect(array('controller' => 'orders', 'action' => 'user_index', $id));
+	    }	*/
 	}	
 
 ?>

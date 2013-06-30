@@ -1657,3 +1657,196 @@ Stack Trace:
 #3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-06-30 15:42:23 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [/var/www/cinema2/app/View/Users/index.ctp, line 68]
+2013-06-30 15:42:23 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 68, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 68, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 15:43:21 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [/var/www/cinema2/app/View/Users/index.ctp, line 65]
+2013-06-30 15:43:21 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 65, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 65, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 15:43:53 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [/var/www/cinema2/app/View/Users/index.ctp, line 65]
+2013-06-30 15:43:53 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 65, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 65, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 15:45:14 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [/var/www/cinema2/app/View/Users/index.ctp, line 68]
+2013-06-30 15:45:14 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 68, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 68, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 15:47:27 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting '(' in [/var/www/cinema2/app/View/Users/index.ctp, line 20]
+2013-06-30 15:47:27 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting '('
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 20, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 20, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 15:57:55 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/cinema2/app/View/Users/index.ctp, line 10]
+2013-06-30 15:57:55 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 10, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 10, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 15:58:10 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cinema2/app/View/Users/index.ctp, line 9]
+2013-06-30 15:58:10 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cinema2/users
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 9, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 9, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 16:15:31 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/cinema2/app/View/Users/add.ctp, line 43]
+2013-06-30 16:15:31 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cinema2/users/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 43, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 43, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 16:25:02 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cinema2/app/View/Users/edit.ctp, line 20]
+2013-06-30 16:25:02 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cinema2/users/edit/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 20, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 20, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 17:18:34 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:19:15 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:19:19 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:25:50 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:25:55 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:26:32 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:27:10 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:28:25 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:30:17 Error: [NotFoundException] Nie podano numeru zamówienia.
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 [internal function]: OrdersController->user_index()
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 17:31:45 Error: [MissingViewException] View file "/var/www/cinema2/app/View/Orders/user_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cinema2/app/View/Orders/user_index.ctp',
+)
+Request URL: /cinema2/orders/user_index
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-30 18:49:52 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/cinema2/app/Controller/OrdersController.php, line 10]
+2013-06-30 18:49:52 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cinema2/orders
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/cinema...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/cinema...', 10, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/cinema...', 10, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

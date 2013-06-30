@@ -24,7 +24,7 @@ class User extends AppModel {
 
 			'Match passwords' => array(
 				'rule' 	=> 'matchPasswords',
-				'message'=> 'Your passwords do not match.'
+				'message'=> 'Twoje Hasła Nie Są Identyczne'
 			)
 		),
 
@@ -59,7 +59,7 @@ class User extends AppModel {
     	} 
     	$this->invalidate(
     		'password_confirmation', 
-    		'Your passwords do not match.'
+    		'Hasła Nie Są Identyczne'
     	);
     	return false;
     }
