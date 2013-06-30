@@ -37,28 +37,22 @@ class AppController extends Controller {
 	// obviously has the component Session.
 	public $components = array(
 	    'DebugKit.Toolbar',
-	    'Session'
-	    /*,
+	    'Session',
 	    'Auth'	=> array(
 	    	'loginRedirect'	=> array(
-	    		'controller' 	=> 'posts',
+	    		'controller' 	=> 'performances',
 	    		'action'		=> 'index'
 	    	),
 	    	'logoutRedirect'=> array(
-	    			//Which controller gives the action
-	    		'controller' 	=> 'posts',
-	    			//What action to use.
-	    		'action'		=> 'index',
-	    		/*'controller' 	=> 'pages',
-	    		'action'		=> 'display',
-	    		'home'
+	    		'controller' 	=> 'performances',
+	    		'action'		=> 'index'	    		
 	    	),
 	    	'authError'		=>'You are not really allowed to access that page without authentication.',
 	    	'authorize'		=> array('Controller')
-	    )*/
+	    )
 	);
 
-/*	public function beforeFilter(){
+public function beforeFilter(){
 		//  tells the AuthComponent to not require a login for all index and view actions, in every controller. We want our visitors to be able to read and list the entries without registering in the site.
 
 		// Simply these fields can be seen without authentification. Simple.
@@ -68,7 +62,7 @@ class AppController extends Controller {
 		// Here we give a method sending variables () to the view.
 		// loggedIn() is a function returning true, if the user is logged in.
 		$this->set('logged_in', $this->Auth->loggedIn());
-		// user() sends all the information about the current user.
+		// user() sends all the information about the current user, which is simply the User.
 		$this->set('current_user', $this->Auth->user());
 
 	}
@@ -80,5 +74,5 @@ class AppController extends Controller {
 		}
 		// Default deny
 		return false;
-	}*/
+	}
 }

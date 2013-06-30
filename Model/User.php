@@ -1,21 +1,11 @@
 <?php
-	// Thanks to naming the object Post there will be an automatic link
-	// with the posts table in the database and with the PostsController.
 
-/*var $name = 'User';*/
-
-/*App::uses('AuthComponent', 'Controller/Component');*/
+App::uses('AuthComponent', 'Controller/Component');
 
 class User extends AppModel {
 
-	/*public $hasMany = 'Post';*/
+	public $hasMany = 'Order';
 
-/*	public $hasMany = array(
-		'isAuthoringMany' 	=> array(
-			'className' 	=> 'Post'
-		)
-	);
-*/
 	public $name= 'User';
 
 	public $validate = array(
@@ -51,7 +41,8 @@ class User extends AppModel {
 					'inList', 
 					array(
 						'admin',
-						'author'
+						'cashier',
+						'customer'
 					)
 				),
 				'message'	=> 'Please enter a valid role',
@@ -60,7 +51,7 @@ class User extends AppModel {
 		)
     );
 
-/*    public function matchPasswords( $data ) {
+    public function matchPasswords( $data ) {
     	//Checks passwords equals password confrimation.
     	if ($data['password'] === $this->data['User']['password_confirmation'] ) {
 
@@ -85,7 +76,7 @@ class User extends AppModel {
     		// This will consent the change of password. 
     	return true;
     }
-*/
+
 
 } 
 

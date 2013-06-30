@@ -1,9 +1,9 @@
-<h1> Seanse </h1>
+<h1> Zamówienia </h1>
 
 <?php 
     echo $this->Html->link(
-        'Dodaj Seans',
-        array( 'controller' => 'performances', 'action' => 'add' )
+        'Dodaj Zamówienie',
+        array( 'controller' => 'orders', 'action' => 'add' )
     ); 
 ?>
 
@@ -12,30 +12,30 @@
         <th>Id</th><th>Tytuł Filmu</th><th>Nazwa Sali</th><th>Dodano</th><th>Zmodyfikowano</th><th>Możliwe akcje</th>
     </tr>
 
-    <?php foreach ($performances as $performance): ?>
+    <?php foreach ($orders as $order): ?>
     <tr>
-        <td><?php echo $performance['Performance']['id']; ?></td>
+        <td><?php echo $order['Order']['id']; ?></td>
         <td>
             <?php 
                 echo $this->Html->link(
-                    $performance['Movie']['title'], 
+                    $order['Movie']['title'], 
                     array(
                         'action' => 'view', 
-                        $performance['Performance']['id']
+                        $order['Order']['id']
                     )
                 );
             ?>
         </td>
-        <td><?php echo $performance['Theatre']['name']; ?></td>
-        <td><?php echo $performance['Performance']['created']; ?></td>
-        <td><?php echo $performance['Performance']['modified']; ?></td>
+        <td><?php echo $order['Theatre']['name']; ?></td>
+        <td><?php echo $order['Order']['created']; ?></td>
+        <td><?php echo $order['Order']['modified']; ?></td>
         <td>
             <?php 
                 echo $this->Html->link(
                     'Modyfikuj', 
                     array(
                         'action' => 'edit', 
-                        $performance['Performance']['id']
+                        $order['Order']['id']
                     )
                 );
             ?>
@@ -44,7 +44,7 @@
                     'Usuń',
                     array( 
                         'action' => 'delete',
-                        $performance['Performance']['id']
+                        $order['Order']['id']
                     ),
                     array(
                         'confirm'   => 'Are you sure?'
@@ -54,5 +54,5 @@
         </td>
     </tr>
     <?php endforeach; ?>
-    <?php unset($performance); ?>
+    <?php unset($order); ?>
 </table>

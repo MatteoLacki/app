@@ -1191,3 +1191,429 @@ Stack Trace:
 #3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-06-29 20:46:09 Error: [MissingViewException] View file "/var/www/cinema2/app/View/Performances/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cinema2/app/View/Performances/edit.ctp',
+)
+Request URL: /cinema2/performances/edit/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-29 20:52:22 Error: [MissingViewException] View file "/var/www/cinema2/app/View/Performances/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cinema2/app/View/Performances/view.ctp',
+)
+Request URL: /cinema2/performances/view/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-29 20:52:33 Error: [MissingViewException] View file "/var/www/cinema2/app/View/Performances/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cinema2/app/View/Performances/view.ctp',
+)
+Request URL: /cinema2/performances/view/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-29 22:19:24 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/cinema2/app/Controller/UsersController.php, line 10]
+2013-06-29 22:19:24 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cinema2/users/index
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 22:20:01 Error: [MissingViewException] View file "/var/www/cinema2/app/View/Orders/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cinema2/app/View/Orders/add.ctp',
+)
+Request URL: /cinema2/orders/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-29 22:44:38 Error: Fatal Error (1): Call to undefined function r_print() in [/var/www/cinema2/app/View/Orders/add.ctp, line 27]
+2013-06-29 22:44:38 Error: [FatalErrorException] Call to undefined function r_print()
+Request URL: /cinema2/orders/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cinema...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cinema...', 27, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cinema...', 27, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 23:17:51 Error: [MissingHelperException] Helper class OrderHelper could not be found.
+Exception Attributes: array (
+  'class' => 'OrderHelper',
+  'plugin' => false,
+)
+Request URL: /cinema2/orders/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Order')
+#1 /var/www/cinema2/lib/Cake/View/View.php(834): HelperCollection->__isset('Order')
+#2 /var/www/cinema2/app/View/Orders/add.ctp(30): View->__get('Order')
+#3 /var/www/cinema2/lib/Cake/View/View.php(946): include('/var/www/cinema...')
+#4 /var/www/cinema2/lib/Cake/View/View.php(908): View->_evaluate('/var/www/cinema...', Array)
+#5 /var/www/cinema2/lib/Cake/View/View.php(471): View->_render('/var/www/cinema...')
+#6 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#7 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#8 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-06-29 23:18:58 Error: [MissingHelperException] Helper class OrderHelper could not be found.
+Exception Attributes: array (
+  'class' => 'OrderHelper',
+  'plugin' => false,
+)
+Request URL: /cinema2/orders/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Order')
+#1 /var/www/cinema2/lib/Cake/View/View.php(834): HelperCollection->__isset('Order')
+#2 /var/www/cinema2/app/View/Orders/add.ctp(30): View->__get('Order')
+#3 /var/www/cinema2/lib/Cake/View/View.php(946): include('/var/www/cinema...')
+#4 /var/www/cinema2/lib/Cake/View/View.php(908): View->_evaluate('/var/www/cinema...', Array)
+#5 /var/www/cinema2/lib/Cake/View/View.php(471): View->_render('/var/www/cinema...')
+#6 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#7 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#8 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-06-29 23:31:16 Error: Fatal Error (1): Call to undefined function length() in [/var/www/cinema2/app/View/Orders/add.ctp, line 34]
+2013-06-29 23:31:16 Error: [FatalErrorException] Call to undefined function length()
+Request URL: /cinema2/orders/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cinema...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cinema...', 34, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cinema...', 34, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 23:41:21 Error: [MissingHelperException] Helper class OrderHelper could not be found.
+Exception Attributes: array (
+  'class' => 'OrderHelper',
+  'plugin' => false,
+)
+Request URL: /cinema2/orders/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Order')
+#1 /var/www/cinema2/lib/Cake/View/View.php(834): HelperCollection->__isset('Order')
+#2 /var/www/cinema2/app/View/Orders/add.ctp(9): View->__get('Order')
+#3 /var/www/cinema2/lib/Cake/View/View.php(946): include('/var/www/cinema...')
+#4 /var/www/cinema2/lib/Cake/View/View.php(908): View->_evaluate('/var/www/cinema...', Array)
+#5 /var/www/cinema2/lib/Cake/View/View.php(471): View->_render('/var/www/cinema...')
+#6 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#7 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#8 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-06-29 23:44:33 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/cinema2/app/Controller/UsersController.php, line 10]
+2013-06-29 23:44:33 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cinema2/users/
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 23:44:38 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/cinema2/app/Controller/UsersController.php, line 10]
+2013-06-29 23:44:38 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cinema2/users/index
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 10, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-29 23:51:39 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/cinema2/app/View/Users/add.ctp, line 12]
+2013-06-29 23:51:39 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cinema2/users/add
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 12, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 12, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 00:22:57 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cinema2/performances
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/cinema2/lib/Cake/View/View.php(834): HelperCollection->__isset('Auth')
+#2 /var/www/cinema2/app/View/Layouts/default.ctp(75): View->__get('Auth')
+#3 /var/www/cinema2/lib/Cake/View/View.php(946): include('/var/www/cinema...')
+#4 /var/www/cinema2/lib/Cake/View/View.php(908): View->_evaluate('/var/www/cinema...', Array)
+#5 /var/www/cinema2/lib/Cake/View/View.php(535): View->_render('/var/www/cinema...')
+#6 /var/www/cinema2/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#8 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-06-30 00:23:52 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cinema2/performances
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/cinema2/lib/Cake/View/View.php(834): HelperCollection->__isset('Auth')
+#2 /var/www/cinema2/app/View/Layouts/default.ctp(75): View->__get('Auth')
+#3 /var/www/cinema2/lib/Cake/View/View.php(946): include('/var/www/cinema...')
+#4 /var/www/cinema2/lib/Cake/View/View.php(908): View->_evaluate('/var/www/cinema...', Array)
+#5 /var/www/cinema2/lib/Cake/View/View.php(535): View->_render('/var/www/cinema...')
+#6 /var/www/cinema2/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /var/www/cinema2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#8 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-06-30 01:29:34 Error: Fatal Error (1): Call to a member function redirect() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:29:34 Error: [FatalErrorException] Call to a member function redirect() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:33:19 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:33:19 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:39:26 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:39:26 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:40:18 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:40:18 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:40:24 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:40:24 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:41:46 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:41:46 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:44:05 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:44:05 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:46:00 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:46:00 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:47:05 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:47:05 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:47:23 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:47:23 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/8
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:50:28 Error: Fatal Error (1): Call to a member function add() on a non-object in [/var/www/cinema2/app/Controller/PerformancesController.php, line 87]
+2013-06-30 01:50:28 Error: [FatalErrorException] Call to a member function add() on a non-object
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 87, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 01:51:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'add' at line 1
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('add', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('add', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('add', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('add', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/PerformancesController.php(87): Model->__call('add', Array)
+#6 /var/www/cinema2/app/Controller/PerformancesController.php(87): Order->add('5')
+#7 [internal function]: PerformancesController->buy('5')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PerformancesController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 01:52:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'add' at line 1
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('add', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('add', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('add', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('add', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/PerformancesController.php(87): Model->__call('add', Array)
+#6 /var/www/cinema2/app/Controller/PerformancesController.php(87): Order->add('5')
+#7 [internal function]: PerformancesController->buy('5')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PerformancesController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 01:53:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'redirect' at line 1
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('redirect', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('redirect', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('redirect', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('redirect', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/PerformancesController.php(88): Model->__call('redirect', Array)
+#6 /var/www/cinema2/app/Controller/PerformancesController.php(88): Order->redirect(Array)
+#7 [internal function]: PerformancesController->buy('5')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PerformancesController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 01:54:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'redirect' at line 1
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('redirect', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('redirect', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('redirect', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('redirect', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/PerformancesController.php(88): Model->__call('redirect', Array)
+#6 /var/www/cinema2/app/Controller/PerformancesController.php(88): Order->redirect(Array)
+#7 [internal function]: PerformancesController->buy('5')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PerformancesController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 01:54:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'redirect' at line 1
+Request URL: /cinema2/performances/buy/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('redirect', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('redirect', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('redirect', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('redirect', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/PerformancesController.php(88): Model->__call('redirect', Array)
+#6 /var/www/cinema2/app/Controller/PerformancesController.php(88): Order->redirect(Array)
+#7 [internal function]: PerformancesController->buy('5')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PerformancesController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 01:55:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'redirect' at line 1
+Request URL: /cinema2/performances/buy/7
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('redirect', Array)
+#2 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('redirect', Array, Array)
+#3 /var/www/cinema2/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('redirect', Array, Array)
+#4 /var/www/cinema2/lib/Cake/Model/Model.php(800): DboSource->query('redirect', Array, Object(Order))
+#5 /var/www/cinema2/app/Controller/PerformancesController.php(88): Model->__call('redirect', Array)
+#6 /var/www/cinema2/app/Controller/PerformancesController.php(88): Order->redirect(Array)
+#7 [internal function]: PerformancesController->buy('7')
+#8 /var/www/cinema2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PerformancesController), Array)
+#9 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cinema2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PerformancesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cinema2/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-06-30 02:03:29 Error: Fatal Error (4): syntax error, unexpected T_IF in [/var/www/cinema2/app/Controller/OrdersController.php, line 33]
+2013-06-30 02:03:29 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /cinema2/orders/add/8
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 33, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 33, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-30 02:04:20 Error: Fatal Error (4): syntax error, unexpected T_IF in [/var/www/cinema2/app/Controller/OrdersController.php, line 33]
+2013-06-30 02:04:20 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /cinema2/orders/add/8
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 33, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 33, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

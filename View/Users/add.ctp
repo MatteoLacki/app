@@ -3,23 +3,30 @@
 	<?php echo $this->Form->create('User'); ?>
 
 	<fieldset>
-		<legend><?php echo __('Add User'); ?></legend>
+		<legend><?php echo __('Użytkowniku - Poznajmy Się'); ?></legend>
 
 		<?php 
 			
 			echo $this->Form->input(
-				'username'
+				'username',
+				array(
+					'label' => 'Nazwa Użytkownika'
+				)	
 			);
 			
 				//this will be recognized.
 			echo $this->Form->input(
-				'password'
+				'password',
+				array(
+					'label' => 'Hasło'
+				)	
 			);
 			
 			echo $this->Form->input(
 				'password_confirmation', 
 				array(
-					'type' => 'password'
+					'type' => 'password',
+					'label' => 'Potwierdź Hasło'
 				)
 			);
 
@@ -27,14 +34,16 @@
 				'role', 
 				array(
 					'options' => array(
-						'admin' => 'Admin', 
-						'author' => 'Author'
-					)
+						'admin' 	=> 'Administrator', 
+						'cashier' 	=> 'Kasjer',
+						'customer' 	=> 'Klient'
+					),
+					'label' => 'Sort Petenta'
 				)
 			);
 
 		?>
 	</fieldset>
 
-	<?php echo $this->Form->end(__('Submit')); ?>
+	<?php echo $this->Form->end(__('Zakończ Rejestrację')); ?>
 </div>

@@ -1,16 +1,17 @@
-<h1>Dodanie Nowego Seansu</h1>
-<div class="performances form">
+<h1>Zmień Szczegóły Zamówienia</h1>
+<div class="orders form">
 
-	<?php echo $this->Form->create('Performance'); ?>
+	<?php echo $this->Form->create('Order'); ?>
 	<fieldset>
 	<?php
+/*
 		echo $this->Form->input('movie_id', array('label' => 'Tytuł:'));
 		echo $this->Form->input('theatre_id', array('label' => 'Sala Kinowa:'));
 		echo $this->Form->input('date', array('label' => 'Data:'));
-		echo $this->Form->input('seat_price', array('label' => 'Cena Miejsca na Seansie:'));
+		echo $this->Form->input('seat_price', array('label' => 'Cena Miejsca na Seansie:'));*/
 	?>
 	</fieldset>
-	<?php echo $this->Form->end('Zapisz Nowy Seans.'); ?>
+	<?php echo $this->Form->end('Zapisz Zmiany w Szczegółach Zamówienia'); ?>
 </div>
 <div class="actions">
 	<h3> Działania </h3>
@@ -18,7 +19,7 @@
 		<li>
 			<?php
 					echo $this->Html->link(
-                        'Wróć do Spisu Seansów', 
+                        'Wróć do Spisu Zamówienia', 
                         array(
                         	'action' => 'index'
 						)
@@ -26,4 +27,4 @@
 			?>
 		</li>
 	</ul>
-</div>
+</div>		

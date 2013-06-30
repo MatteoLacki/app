@@ -2,7 +2,6 @@
 	class UsersController extends AppController {
 		
 		public $name = 'Users';
-
 		public function beforeFilter() {
 			// What is that? Probably some kind of inheritance. We extend the AppController.
 			parent::beforeFilter();
@@ -38,16 +37,13 @@
 				}	
 			}
 		}
-
-		public function goTwoAndFro(){
-			
-		}
-
+	
 
 		public function logout(){
 			// In the appControl we set where the logout will end up.
 			$this->redirect($this->Auth->logout());
 		}
+
 
 		public function index() {
 			$this->User->recursive = 0;

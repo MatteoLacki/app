@@ -14,4 +14,18 @@
 	  <!-- to generuje guzik potwierdzenia i zamyka sesję formularza. Opcjonalnie wyrzuca tekst. --> 
 	<?php echo $this->Form->end('Zapisz nowy film'); ?>
 </div>
-		
+<div class="actions">
+	<h3> Działania </h3>
+	<ul>
+		<li>
+			<?php
+					echo $this->Html->link(
+                        'Wróć do Spisu Filmów', 
+                        array(
+                        	'action' => 'index'
+						)
+                    );
+			?>
+		</li>
+	</ul>
+</div>		

@@ -59,7 +59,7 @@ class MoviesController extends AppController {
         }
 
         if (!$this->request->data) {
-            $this->request->data = $movie;
+        $this->request->data = $movie;
         }
     }
 

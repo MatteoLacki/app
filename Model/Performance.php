@@ -3,10 +3,11 @@ class Performance extends AppModel {
 	
 	public $name = 'Performance';
 
-/*	public $belongsTo = 'Theatre';*/
+	public $hasMany = 'Order';
+
 	public $belongsTo = array(
-		'Theatre' ,
-		'Movie' 
+		'Theatre',
+		'Movie'		 
 	);
 
 	public $validate = array(

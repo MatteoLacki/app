@@ -42,6 +42,8 @@
                         )
                     );
                 ?>
+        </li>                
+        <li>        
                 <?php 
                     // postLink creates a link that uses Javascript to do a user request deleting our user
                     // postLink is a fucking function!

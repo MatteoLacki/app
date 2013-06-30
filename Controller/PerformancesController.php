@@ -54,7 +54,7 @@ class PerformancesController extends AppController {
     }
 
     public function edit($id = null) {
-         if (!$id) {
+        if (!$id) {
             throw new NotFoundException(__('Nie obrano identyfikatora seansu.'));
         }
 
@@ -78,6 +78,10 @@ class PerformancesController extends AppController {
         }
     }
 
+    public function buy($id) {
+            // Przekierowanie do kreowania zakupów.
+        $this->redirect(array('controller' => 'orders', 'action' => 'add', $id));
+    }
 
 }
 

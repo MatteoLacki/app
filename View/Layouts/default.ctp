@@ -45,11 +45,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="content">
 
 				<!-- The logout/login part. -->
-<!-- 				
+ 				
 			<div style='text-align: right;'>
 				<?php if ($logged_in): ?>
 					Welcome  
-					<?php echo $current_user['username'] ?>. 
+					<?php echo $current_user['username'];?>. 
 					<?php 
 						echo $this->Html->link(
 							'Logout', 
@@ -71,7 +71,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					?>
 				<?php endif; ?>
 			</div>
- -->
+<!-- 
+			<?php print_r($current_user);?>
+
+			<?php 
+				$current_user['Sex'] = 'Male';				
+				print_r($current_user);
+			?> -->
+
 			<?php echo $this->Session->flash(); ?>
 			<!-- This is a flash message that regards authorisation -->
 			<?php echo $this->Session->flash('auth'); ?>
