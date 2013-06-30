@@ -3,8 +3,15 @@
 
 	<?php echo $this->Form->create('Order'); ?>
 	<fieldset>
+
 	<?php
-		echo $this->Form->input('seat_price', array('label' => 'Cena Miejsca na Seansie:'));
+		if ($logged['adminOrCashier']):
+			echo $this->Form->input('accepted', array('label' => 'ZAAKCEPTUJ ZAMÓWIENIE'));
+		elseif ($logged['customer']):
+			echo $this->Form->input('seats_reserved', array('label' => 'ZAAKCEPTUJ ZAMÓWIENIE'));
+		else:
+			echo 'A jak tu się dostałeś?';
+		endif;
 	?>
 	</fieldset>
 	<?php echo $this->Form->end('Zapisz Zmiany w Szczegółach Zamówienia'); ?>
@@ -14,12 +21,12 @@
 	<ul>
 		<li>
 			<?php
-					echo $this->Html->link(
-                        'Wróć do Spisu Zamówienia', 
-                        array(
-                        	'action' => 'index'
-						)
-                    );
+				echo $this->Html->link(
+                    'Wróć do Spisu Zamówienia', 
+                    array(
+                    	'action' => 'index'
+					)
+                );
 			?>
 		</li>
 	</ul>

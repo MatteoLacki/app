@@ -8,6 +8,10 @@ class Order extends AppModel {
 		'Performance' 
 	);
 
+/*	public $virtualFields = array(
+		'the_sum' => 'SUM(Order.seats_reserved)'
+	);*/
+
 	public $validate = array(
         'seats_reserved'=> array(
 			'required' 		=> array(
@@ -25,6 +29,40 @@ class Order extends AppModel {
     );
 
 
+	public function totalSeats() {
 
+		$summant = $this->find(
+		    'first',
+		    array(
+		        'fields'=>array('SUM(Order.seats_reserved) AS banana'),
+		    )
+		);
+		$summant = $summant[0]['banana'];
+
+		return $summant;
+	}
+
+	public function totalSeats2( $theatreId ) {
+		
+		$sql = 
+			"	SELECT 	sum(seats_reserved) AS seatSum 
+				FROM 	orders 
+				JOIN 	performances
+					ON 		orders.performance_id 	= performances.id
+					WHERE 	performances.theatre_id = ".$theatreId."
+					;
+			";
+
+		$result = $this->query($sql);
+		$result = $result[0][0]['seatSum'];
+
+		if ($result === NULL) {
+			return(0);
+		} else {
+			return($result);
+		}
+	}
+
+	
 }
 ?>

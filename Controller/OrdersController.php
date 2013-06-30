@@ -16,7 +16,9 @@ class OrdersController extends AppController {
             switch ($whoAmI) {
                 case 'admin':
                 case 'cashier':
-                    $this->set('orders', $this->Order->find('all'));                
+                    $this->set('orders', $this->Order->find('all'));
+                    $this->set('totalSeats', $this->Order->totalSeats2(2));                /*
+                    $this->set('seatsWow', $this->Order->Performance->totalSeats2(2));                */
                     break;
     
                 case 'customer':
@@ -117,7 +119,6 @@ class OrdersController extends AppController {
                 return true;
             }    
         }
-
             //Ostatnia instancja autoryzacji - klasa matka
         return parent::isAuthorized($user);
     }
