@@ -78,6 +78,17 @@
         <td><?php echo $order['Order']['modified']; ?></td>
         <td>
             <?php 
+                if ($order['Order']['accepted']):
+            ?>
+                <?php if($logged['adminOrCashier']): ?>
+                    Łyknął Przynętę
+                <?php else: ?>                
+                    Odbierz Bilety
+                <?php endif; ?>                  
+            <?php 
+                else:
+            ?>        
+            <?php 
                 echo $this->Html->link(
                     'Modyfikuj', 
                     array(
@@ -97,6 +108,9 @@
                         'confirm'   => 'Are you sure?'
                     )
                 );
+            ?>
+            <?php 
+                endif;  
             ?>
         </td>
     </tr>

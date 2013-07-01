@@ -64,6 +64,18 @@ class TheatresController extends AppController {
     }
 
 
+    public function isAuthorized($user) {
+
+        if (isset($user['role']) && $user['role'] === 'cashier') {
+            if ( in_array($this->action, array('add','view', 'delete', 'edit') ) ) {
+                return true;
+            }    
+        }    
+
+            //Ostatnia instancja autoryzacji - klasa matka
+        return parent::isAuthorized($user);
+    }
+
 }
 
 ?>

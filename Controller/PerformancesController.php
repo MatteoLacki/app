@@ -93,7 +93,7 @@ class PerformancesController extends AppController {
     */
 
         if (isset($user['role']) && $user['role'] === 'cashier') {
-            if ( in_array($this->action, array('view', 'delete', 'edit') ) ) {
+            if ( in_array($this->action, array('add','view', 'delete', 'edit') ) ) {
                 return true;
             }    
         }    

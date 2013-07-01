@@ -1,14 +1,31 @@
-<h1>Zmień Szczegóły Filmu</h1>
-<fieldset>
-<?php
-	echo $this->Form->create('Movie');
+<h3>Zmień Szczegóły Filmu</h3>
+<div class="movies form">
+	<fieldset>
+	<?php
+		echo $this->Form->create('Movie');
 
-	echo $this->Form->input('title', array('label' => 'Tytuł'));
-	echo $this->Form->input('runtime', array('label' => 'Czas Trwania w Minutach'));
-	echo $this->Form->input('register', array('label' => 'Reżyseria'));
-	echo $this->Form->input('year', array('label' => 'Rok produkcji'));		
-	echo $this->Form->input('description', array('label' => 'Opis'));
+		echo $this->Form->input('title', array('label' => 'Tytuł'));
+		echo $this->Form->input('runtime', array('label' => 'Czas Trwania w Minutach'));
+		echo $this->Form->input('register', array('label' => 'Reżyseria'));
+		echo $this->Form->input('year', array('label' => 'Rok produkcji'));		
+		echo $this->Form->input('description', array('label' => 'Opis'));
 
-    echo $this->Form->end('Save Movie');
-?>
-</fieldset>  
+	    echo $this->Form->end('Save Movie');
+	?>
+	</fieldset>  
+</div>
+<div class="actions">
+	<h3> Działania </h3>
+	<ul>
+		<li>
+			<?php
+					echo $this->Html->link(
+                        'Wróć do Spisu Filmów', 
+                        array(
+                        	'action' => 'index'
+						)
+                    );
+			?>
+		</li>
+	</ul>
+</div>
