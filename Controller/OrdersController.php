@@ -17,10 +17,6 @@ class OrdersController extends AppController {
                 case 'admin':
                 case 'cashier':
                     $this->set('orders', $this->Order->find('all'));
-                    $this->set('totalSeats', $this->Order->totalSeats2(2)); 
-                    /*$this->set('informacja', $this->Order->totalSeats2(2));                */
-                    /*
-                    $this->set('seatsWow', $this->Order->Performance->totalSeats2(2));                */
                     break;
     
                 case 'customer':
@@ -28,14 +24,7 @@ class OrdersController extends AppController {
                     break;
             }
         }
-  /*      $this->set('orders', $this->Order->find('all'));      */
     }
-
-/*    public function user_index() {   
-        $this->Order->recursive = 2;
-        $this->set('orders', $this->Order->findAllByUserId($this->Auth->user('id')));
-    }
-*/
 
     public function view($id = null) {
         if (!$id) {
@@ -64,7 +53,7 @@ class OrdersController extends AppController {
             }           
         }
 
-        $performances = $this->Order->Performance->find('list');
+/*        $performances = $this->Order->Performance->find('list');
         $this->set('performances', $performances );
 
         $performances2 = $this->Order->Performance->find('all');
@@ -74,7 +63,7 @@ class OrdersController extends AppController {
         $this->set('movies', $movies );
 
         $users = $this->Order->User->find('list');
-        $this->set('users', $users );
+        $this->set('users', $users );*/
     }
 
     public function delete($id){
@@ -98,14 +87,17 @@ class OrdersController extends AppController {
         if (!$order) {
             throw new NotFoundException(__('Obrano identyfikator spoza bazy danych.'));
         }
-   
-        $seatsOccupied      = $this->Order->totalSeats2($id);
-        $theatreHasSeats    = $this->Order->theatreSeatsNo($id);
 
-        $this->set('seatsOccupied', $seatsOccupied);   
+        $comparison = $this->Order->seatsComparison($id, $order['Performance']['theatre_id'], $order['Order']['seats_reserved']);
+        $this->set('comparison', $comparison);   
+   
+        $this->set('noOverfill', $comparison['canReserve']);
+
+/*        
+        $theatreHasSeats    = $this->Order->theatreSeatsNo($id);
         $this->set('reserving', $order['Order']['seats_reserved']);
         $this->set('orderInfo', $theatreHasSeats);  
-        $this->set('noOverfill', $theatreHasSeats >= $seatsOccupied + $order['Order']['seats_reserved']);
+        $this->set('noOverfill', $theatreHasSeats >= $seatsOccupied + $order['Order']['seats_reserved']);*/
 
 
         if ($this->request->is('post') || $this->request->is('put')) {
@@ -127,11 +119,16 @@ class OrdersController extends AppController {
     public function isAuthorized($user) {
 
         if (isset($user['role']) && $user['role'] === 'customer') {
-
             if ( in_array($this->action, array('add', 'edit', 'delete') ) ) {
                 return true;
             }    
         }
+
+        if (isset($user['role']) && $user['role'] === 'cashier') {
+            if ( in_array($this->action, array('edit', 'delete') ) ) {
+                return true;
+            }    
+        }        
             //Ostatnia instancja autoryzacji - klasa matka
         return parent::isAuthorized($user);
     }

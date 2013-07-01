@@ -8,10 +8,6 @@ class Order extends AppModel {
 		'Performance' 
 	);
 
-/*	public $virtualFields = array(
-		'the_sum' => 'SUM(Order.seats_reserved)'
-	);*/
-
 	public $validate = array(
         'seats_reserved'=> array(
 			'required' 		=> array(
@@ -31,7 +27,7 @@ class Order extends AppModel {
 		),
 
     );
-
+/*
 
 	public function totalSeats() {
 
@@ -45,16 +41,15 @@ class Order extends AppModel {
 
 		return $summant;
 	}
+*/
+/*	public function totalSeats2( $theatreId ) {
 
-	public function totalSeats2( $theatreId ) {
-		
 		$sql = 
-			"	SELECT 	sum(seats_reserved) AS seatSum 
-				FROM 	orders 
-				JOIN 	performances
-					ON 		orders.performance_id 	= performances.id
-					WHERE 	performances.theatre_id = ".$theatreId."
-					;
+		   "SELECT 	sum(seats_reserved) AS seatSum 
+			FROM 	orders 
+			JOIN 	performances
+				ON 		orders.performance_id 	= performances.id
+			WHERE 	performances.theatre_id = ".$theatreId. ";
 			";
 
 		$result = $this->query($sql);
@@ -66,7 +61,67 @@ class Order extends AppModel {
 			return($result);
 		}
 	}
+*/
+	public function seatsComparison( $id, $theatre_id, $wantedSeats) {
+		
+		$findingAllAccepted = 
+		   "SELECT SUM( seats_reserved ) AS seatSum
+			FROM orders AS o
+			JOIN performances AS p 
+				ON o.performance_id = p.id
+			WHERE o.accepted =1 AND p.theatre_id =".$theatre_id.";
+			";
 
+		$acceptedSeatsNo = $this->query($findingAllAccepted);
+		$acceptedSeatsNo = $acceptedSeatsNo[0][0]['seatSum'];
+
+		if ($acceptedSeatsNo === NULL) {
+			$acceptedSeatsNo = 0;
+		}
+/*
+		$sql = "SELECT 	seats, seats_reserved
+				FROM 	theatres AS t
+				JOIN (
+					SELECT 	o.id, o.seats_reserved, p.theatre_id 	
+					FROM 	orders AS o
+					JOIN 	performances AS p 
+						ON 	o.performance_id = p.id
+					WHERE 	o.id =".$id."
+				) 	AS tmp 
+					ON tmp.theatre_id = t.id";
+*/
+
+		$sql = "SELECT 	t.seats
+				FROM 	orders 			AS o
+				JOIN	performances 	AS p 	ON 	o.performance_id = p.id
+				JOIN	theatres		AS t	ON 	t.id = ".$theatre_id."
+				WHERE 	o.id =".$id.";";
+
+		$result = $this->query($sql);
+		$seatsInTheatre = $result[0]['t']['seats'];
+		$seatsReserved  = $wantedSeats;
+
+		if ($seatsInTheatre === NULL) {
+			$seatsInTheatre = 0;
+		} 
+		if ($seatsReserved === NULL) {
+			$seatsReserved = 0;
+		}  
+
+		$canReserve = ( $seatsReserved + $acceptedSeatsNo <= $seatsInTheatre );
+
+		$result = array( 
+			'seatsInTheatre'	=> $seatsInTheatre, 
+			'seatsReserved'		=> $seatsReserved, 
+			'acceptedSeatsNo'	=> $acceptedSeatsNo,
+			'canReserve'		=> $canReserve 
+		);
+
+		return $result;
+	}
+
+
+/*
 	public function theatreSeatsNo( $id ) {
 		
 		$sql = 
@@ -76,7 +131,7 @@ class Order extends AppModel {
 						FROM 	orders as o
 						JOIN 	performances as p
 						ON 		o.performance_id 	= p.id	
-						WHERE 	o.id = ".$id." ) as tmp
+						WHERE 	o.accepted = TRUE AND o.id = ".$id." ) as tmp
 					JOIN 	theatres as t
 					ON 		t.id = tmp.theatre_id	
 					;
@@ -93,14 +148,14 @@ class Order extends AppModel {
 
 		return $result;
 	}
+*/
 
-
-	public function testingTheatre() {
-/*		return $this->Order->Performance->Theatre->testingTheatre2( 3 );*/
+/*	public function testingTheatre() {
+		return $this->Order->Performance->Theatre->testingTheatre2( 3 );
 
 
 	}
-
+*/
 /*
 	public function noOverfill( $data ) {
 

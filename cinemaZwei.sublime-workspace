@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"theat",
+				"theatres"
+			],
+			[
+				"id",
+				"theatre_id"
+			],
+			[
+				"infor",
+				"informacje"
+			],
+			[
+				"admin",
+				"adminOrCashier"
+			],
+			[
+				"perform",
+				"performances"
+			],
+			[
+				"Użytkow",
+				"Użytkownika"
+			],
+			[
+				"log",
+				"loggedCustomer"
+			],
+			[
+				"no",
+				"nooneLogged"
+			],
+			[
+				"logg",
+				"loggedAdmin"
+			],
+			[
+				"lo",
+				"loggedCustomer"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"order",
+				"orders"
+			],
+			[
 				"zamów",
 				"zamówienia"
 			],
@@ -172,10 +220,6 @@
 				"require"
 			],
 			[
-				"no",
-				"noOfIterations"
-			],
-			[
 				"Tempe",
 				"Temperature"
 			],
@@ -262,10 +306,6 @@
 			[
 				"prop",
 				"proposedStates"
-			],
-			[
-				"log",
-				"logDenProposedStates"
 			],
 			[
 				"cov",
@@ -464,26 +504,10 @@
 	"buffers":
 	[
 		{
-			"file": "Controller/PerformancesController.php",
+			"file": "Model/Order.php",
 			"settings":
 			{
-				"buffer_size": 2803,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Model/Performance.php",
-			"settings":
-			{
-				"buffer_size": 355,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "View/Orders/add.ctp",
-			"settings":
-			{
-				"buffer_size": 687,
+				"buffer_size": 2107,
 				"line_ending": "Unix"
 			}
 		},
@@ -491,23 +515,47 @@
 			"file": "Controller/OrdersController.php",
 			"settings":
 			{
-				"buffer_size": 2852,
+				"buffer_size": 4789,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Model/Order.php",
+			"file": "View/Orders/edit.ctp",
 			"settings":
 			{
-				"buffer_size": 557,
+				"buffer_size": 882,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "View/Performances/view.ctp",
+			"file": "Model/Theatre.php",
 			"settings":
 			{
-				"buffer_size": 2396,
+				"buffer_size": 504,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Controller/TheatresController.php",
+			"settings":
+			{
+				"buffer_size": 1975,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Controller/AppController.php",
+			"settings":
+			{
+				"buffer_size": 3211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "View/Orders/index.ctp",
+			"settings":
+			{
+				"buffer_size": 3172,
 				"line_ending": "Unix"
 			}
 		}
@@ -596,28 +644,34 @@
 	},
 	"file_history":
 	[
-		"/var/www/cinema2/app/View/Orders/add.ctp",
-		"/var/www/cinema2/app/View/Orders/view.ctp",
-		"/var/www/cinema2/app/View/Orders/edit.ctp",
-		"/var/www/cinema2/app/Controller/UsersController.php",
-		"/var/www/cinema2/app/Model/User.php",
 		"/var/www/cinema2/app/Controller/AppController.php",
-		"/var/www/cinema2/app/Controller/OrdersController.php",
-		"/var/www/cinema2/app/View/Layouts/default.ctp",
-		"/var/www/cinema2/app/Model/Order.php",
+		"/var/www/cinema2/app/View/Orders/index.ctp",
+		"/var/www/cinema2/app/View/Orders/view.ctp",
+		"/var/www/cinema2/app/View/Orders/user_index.ctp",
+		"/var/www/cinema2/app/View/Performances/index.ctp",
 		"/var/www/cinema2/app/View/Performances/view.ctp",
-		"/var/www/cinema2/app/View/Users/view.ctp",
+		"/var/www/cinema2/app/View/Performances/add.ctp",
+		"/var/www/cinema2/app/View/Orders/edit.ctp",
+		"/var/www/cinema2/app/Controller/PerformancesController.php",
+		"/var/www/cinema2/app/View/Layouts/default.ctp",
+		"/var/www/cinema2/app/Controller/OrdersController.php",
+		"/var/www/cinema2/app/Controller/UsersController.php",
+		"/var/www/cinema2/app/View/Users/index.ctp",
 		"/var/www/cinema2/app/View/Users/add.ctp",
 		"/var/www/cinema2/app/View/Users/edit.ctp",
+		"/var/www/cinema2/app/Model/User.php",
+		"/var/www/cinema2/app/View/Orders/index_user.ctp",
+		"/var/www/cinema2/app/Model/AppModel.php",
+		"/var/www/cinema2/app/View/Orders/add.ctp",
+		"/var/www/cinema2/app/View/Users/login.ctp",
+		"/var/www/cinema2/app/webroot/css/cake.generic.css",
+		"/var/www/cinema2/app/Model/Performance.php",
+		"/var/www/cinema2/app/Model/Order.php",
+		"/var/www/cinema2/app/View/Users/view.ctp",
 		"/var/www/cinema2/app/View/Performances/edit.ctp",
-		"/var/www/cinema2/app/View/Performances/add.ctp",
 		"/var/www/cinema2/app/View/Movies/add.ctp",
 		"/var/www/cinema2/app/Model/Theatre.php",
 		"/var/www/cinema2/app/Model/Movie.php",
-		"/var/www/cinema2/app/Model/Performance.php",
-		"/var/www/cinema2/app/View/Orders/index.ctp",
-		"/var/www/cinema2/app/Controller/PerformancesController.php",
-		"/var/www/cinema2/app/View/Performances/index.ctp",
 		"/var/www/cinema2/app/View/Theatres/view.ctp",
 		"/var/www/cinema2/app/View/Movies/view.ctp",
 		"/var/www/cinema2/app/Controller/MoviesController.php",
@@ -626,7 +680,6 @@
 		"/var/www/cinema2/app/View/Theatres/add.ctp",
 		"/var/www/cinema2/app/View/Theatres/edit.ctp",
 		"/var/www/cinema2/app/Controller/TheatresController.php",
-		"/var/www/cinema2/app/Model/AppModel.php",
 		"/var/www/cinema2/app/Model/Show.php",
 		"/var/www/cinema2/app/Controller/ShowsController.php",
 		"/var/www/cinema2/app/View/Movies/edit.ctp",
@@ -718,12 +771,7 @@
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/mystyle.sty",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realStateSpaces.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:46:38.csv",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:37:43.csv",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/parallelTemperings.R",
-		"/home/matteo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
-		"/home/matteo/.config/sublime-text-2/Packages/User/SublimeREPL.sublime-settings",
-		"/home/matteo/.config/sublime-text-2/Packages/User/Main.sublime-menu"
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:46:38.csv"
 	],
 	"find":
 	{
@@ -741,6 +789,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"totalSeats",
+			"Jesiotr",
+			"article",
+			"isAuthorized",
+			"Zaakceptowano",
+			"loggedIn",
+			"Auth",
+			"isset",
+			"Rola to",
+			"matchPasswords",
+			"logged",
+			"logge",
+			"Customer",
+			"Cashier",
+			"Admin",
+			"logged",
+			"1",
+			"inline",
+			"ul ",
+			"ul actions",
+			"actions",
+			"menu",
 			"Performance",
 			"performance",
 			"Performance",
@@ -846,29 +916,7 @@
 			"Geyer",
 			"Charles",
 			"Geyer",
-			"Maxime",
-			"format.note output",
-			"note",
-			"Miasojed",
-			"is catalog of 292 entries was generated by calibre on Friday, 21. June 2013 17:38\nThis catalog",
-			"*{",
-			"\\newpage",
-			"Wprowadzenie",
-			"\\addcontentsline",
-			"\\addcontentsline{toc}{chapter}{Wprowadzenie}",
-			"textbf",
-			"abstract",
-			"topskip",
-			"opskip",
-			"titlepage",
-			"tytul",
-			"\\k",
-			" \n",
-			"sdsd",
-			"ploit",
-			"transpositionHistory",
-			"lastTranspositionNo",
-			"transpositionHistory"
+			"Maxime"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -876,6 +924,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"summant",
+			"customer",
+			"cashier",
+			"admin",
+			"",
+			"true",
 			"Order",
 			"order",
 			"Order",
@@ -997,13 +1051,7 @@
 			"Probs",
 			"lastStatesLogUDensities",
 			"lastLogProbability",
-			"proposal",
-			"proposalLexic",
-			"extraSwapUProbabilities",
-			"noOfChainNumbers",
-			"chainNumbers",
-			"transpositionsUpdateForProposal",
-			"updatedStates"
+			"proposal"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -1014,23 +1062,53 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Controller/PerformancesController.php",
+					"file": "Model/Order.php",
 					"settings":
 					{
-						"buffer_size": 2803,
+						"buffer_size": 2107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2555,
-								2555
+								846,
+								846
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Controller/OrdersController.php",
+					"settings":
+					{
+						"buffer_size": 4789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1223,
+								1223
 							]
 						],
 						"settings":
@@ -1041,36 +1119,6 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 740.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Model/Performance.php",
-					"settings":
-					{
-						"buffer_size": 355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								355,
-								355
-							]
-						],
-						"settings":
-						{
-							"encoding_helper_confidence": 0.99,
-							"encoding_helper_encoding": "GB2312",
-							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1080,18 +1128,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "View/Orders/add.ctp",
+					"file": "View/Orders/edit.ctp",
 					"settings":
 					{
-						"buffer_size": 687,
+						"buffer_size": 882,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								328,
-								328
+								279,
+								279
 							]
 						],
 						"settings":
@@ -1103,35 +1151,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 18.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Controller/OrdersController.php",
+					"file": "Model/Theatre.php",
 					"settings":
 					{
-						"buffer_size": 2852,
+						"buffer_size": 504,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1506,
-								1506
+								426,
+								426
 							]
 						],
 						"settings":
 						{
-							"encoding_helper_confidence": 0.99,
+							"encoding_helper_confidence": 0.857639270062,
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1141,18 +1187,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Model/Order.php",
+					"file": "Controller/TheatresController.php",
 					"settings":
 					{
-						"buffer_size": 557,
+						"buffer_size": 1975,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								1290,
+								1290
 							]
 						],
 						"settings":
@@ -1161,7 +1207,8 @@
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1171,18 +1218,48 @@
 				},
 				{
 					"buffer": 5,
-					"file": "View/Performances/view.ctp",
+					"file": "Controller/AppController.php",
 					"settings":
 					{
-						"buffer_size": 2396,
+						"buffer_size": 3211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2188,
-								2188
+								2348,
+								2348
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.9690625,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1100.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "View/Orders/index.ctp",
+					"settings":
+					{
+						"buffer_size": 3172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2714,
+								2714
 							]
 						],
 						"settings":
@@ -1195,7 +1272,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 290.0,
+						"translation.y": 1521.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1249,8 +1326,132 @@
 		"selected_items":
 		[
 			[
+				"ordein",
+				"View/Orders/index.ctp"
+			],
+			[
+				"app",
+				"Controller/AppController.php"
+			],
+			[
+				"theatrecon",
+				"Controller/TheatresController.php"
+			],
+			[
+				"theat",
+				"Model/Theatre.php"
+			],
+			[
+				"orderedit",
+				"View/Orders/edit.ctp"
+			],
+			[
+				"ordervie",
+				"View/Orders/view.ctp"
+			],
+			[
+				"ordin",
+				"View/Orders/index.ctp"
+			],
+			[
+				"order",
+				"Model/Order.php"
+			],
+			[
+				"ordered",
+				"View/Orders/edit.ctp"
+			],
+			[
+				"perfadd",
+				"View/Performances/add.ctp"
+			],
+			[
 				"perforvie",
 				"View/Performances/view.ctp"
+			],
+			[
+				"perforin",
+				"View/Performances/index.ctp"
+			],
+			[
+				"layoutdef",
+				"View/Layouts/default.ctp"
+			],
+			[
+				"ordersedit",
+				"View/Orders/edit.ctp"
+			],
+			[
+				"odrvie",
+				"View/Orders/view.ctp"
+			],
+			[
+				"perfor",
+				"Controller/PerformancesController.php"
+			],
+			[
+				"userc",
+				"Controller/UsersController.php"
+			],
+			[
+				"orderind",
+				"View/Orders/index.ctp"
+			],
+			[
+				"orde",
+				"Controller/OrdersController.php"
+			],
+			[
+				"orderin",
+				"View/Orders/index.ctp"
+			],
+			[
+				"user",
+				"Model/User.php"
+			],
+			[
+				"useredi",
+				"View/Users/edit.ctp"
+			],
+			[
+				"useradd",
+				"View/Users/add.ctp"
+			],
+			[
+				"appc",
+				"Controller/AppController.php"
+			],
+			[
+				"per",
+				"Controller/PerformancesController.php"
+			],
+			[
+				"perfin",
+				"View/Performances/index.ctp"
+			],
+			[
+				"userind",
+				"View/Users/index.ctp"
+			],
+			[
+				"appm",
+				"Model/AppModel.php"
+			],
+			[
+				"usersin",
+				"View/Users/index.ctp"
+			],
+			[
+				"ordersad",
+				"View/Orders/add.ctp"
+			],
+			[
+				"perforind",
+				"View/Performances/index.ctp"
+			],
+			[
+				"a",
+				"Controller/AppController.php"
 			],
 			[
 				"o",
@@ -1265,10 +1466,6 @@
 				"View/Orders/add.ctp"
 			],
 			[
-				"per",
-				"Model/Performance.php"
-			],
-			[
 				"perform",
 				"Controller/PerformancesController.php"
 			],
@@ -1277,20 +1474,8 @@
 				"View/Performances/view.ctp"
 			],
 			[
-				"app",
-				"Controller/AppController.php"
-			],
-			[
 				"users",
 				"Controller/UsersController.php"
-			],
-			[
-				"order",
-				"Controller/OrdersController.php"
-			],
-			[
-				"user",
-				"Model/User.php"
 			],
 			[
 				"moviesadd",
@@ -1339,10 +1524,6 @@
 			[
 				"moviecon",
 				"Controller/MoviesController.php"
-			],
-			[
-				"useradd",
-				"View/Users/add.ctp"
 			],
 			[
 				"movieadd",
@@ -1415,10 +1596,6 @@
 			[
 				"usersvie",
 				"www/html/cake_2_0/app/View/Users/view.ctp"
-			],
-			[
-				"appc",
-				"www/cinema/app/Controller/AppController.php"
 			],
 			[
 				"user.ph",

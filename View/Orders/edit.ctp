@@ -1,8 +1,7 @@
 <h1>Zmień Szczegóły Zamówienia</h1>
 <div class="orders form">
 
-
-		<?php echo $seatsOccupied; ?>:<?php echo $reserving; ?>:<?php echo $orderInfo; ?>
+<!-- 	<?php print_r($comparison); ?> -->
 	<?php echo $this->Form->create('Order'); ?>
 	<fieldset>
 
@@ -12,7 +11,7 @@
 		elseif ($logged['customer']):
 			echo $this->Form->input('seats_reserved', array('label' => 'ZAAKCEPTUJ ZAMÓWIENIE'));
 		else:
-			echo 'A jak tu się dostałeś?';
+			echo 'Nie można potwierdzić zamówienia - zarezerwowanoby o '.($comparison['seatsReserved'] + $comparison['acceptedSeatsNo'] - $comparison['seatsInTheatre'] ).' miejsca za dużo.' ;
 		endif;
 	?>
 	</fieldset>
