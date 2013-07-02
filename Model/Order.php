@@ -13,7 +13,11 @@ class Order extends AppModel {
 			'required' 		=> array(
 				'rule' 		=> array('notEmpty'),
 				'message' 	=> 'Koniecznie podaj informację o tym, jak dużo biletów potrzebujesz.'
-			)
+			),
+			'Bigger Than Zero'	=> array(
+				'rule'		=> 'nonZero',
+				'message'	=> 'Musi Być Ciut Więcej! Więcej niż zero!'
+			) 
 		),
         'accepted'=> array(
 			'required' 		=> array(
@@ -78,18 +82,6 @@ class Order extends AppModel {
 		if ($acceptedSeatsNo === NULL) {
 			$acceptedSeatsNo = 0;
 		}
-/*
-		$sql = "SELECT 	seats, seats_reserved
-				FROM 	theatres AS t
-				JOIN (
-					SELECT 	o.id, o.seats_reserved, p.theatre_id 	
-					FROM 	orders AS o
-					JOIN 	performances AS p 
-						ON 	o.performance_id = p.id
-					WHERE 	o.id =".$id."
-				) 	AS tmp 
-					ON tmp.theatre_id = t.id";
-*/
 
 		$sql = "SELECT 	t.seats
 				FROM 	orders 			AS o
@@ -120,49 +112,14 @@ class Order extends AppModel {
 		return $result;
 	}
 
+	public function nonZero( $data ) {
 
-/*
-	public function theatreSeatsNo( $id ) {
-		
-		$sql = 
-			"	SELECT 	seats 
-				FROM 	
-					(	select 	theatre_id
-						FROM 	orders as o
-						JOIN 	performances as p
-						ON 		o.performance_id 	= p.id	
-						WHERE 	o.accepted = TRUE AND o.id = ".$id." ) as tmp
-					JOIN 	theatres as t
-					ON 		t.id = tmp.theatre_id	
-					;
-			";
-
-		$result = $this->query($sql);
-		$result = $result[0]['t']['seats'];
-
-		if ($result === NULL) {
-			return(0);
-		} else {
-			return($result);
+		if ($data['seats_reserved'] > 0 ) {
+			return true;
 		}
-
-		return $result;
-	}
-*/
-
-/*	public function testingTheatre() {
-		return $this->Order->Performance->Theatre->testingTheatre2( 3 );
-
-
-	}
-*/
-/*
-	public function noOverfill( $data ) {
-
-		if ($data['theatre_id'] === )
 
 		return false;
 	}
-*/
+
 }
 ?>

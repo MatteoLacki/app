@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"seats",
+				"seats_reserved"
+			],
+			[
+				"thea",
+				"theatre_id"
+			],
+			[
+				"theatr",
+				"theatre_id"
+			],
+			[
 				"theat",
 				"theatres"
 			],
@@ -504,58 +516,34 @@
 	"buffers":
 	[
 		{
-			"file": "Model/Order.php",
+			"file": "Controller/PerformancesController.php",
 			"settings":
 			{
-				"buffer_size": 2107,
+				"buffer_size": 3521,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Controller/OrdersController.php",
+			"file": "View/Movies/add.ctp",
 			"settings":
 			{
-				"buffer_size": 4789,
+				"buffer_size": 929,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "View/Orders/edit.ctp",
+			"file": "/home/matteo/Documents/Scienza/Informatica/DataBases/postgresSkrypt.sql",
 			"settings":
 			{
-				"buffer_size": 882,
+				"buffer_size": 1191,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Model/Theatre.php",
+			"file": "/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/creatingPostExample.sql",
 			"settings":
 			{
-				"buffer_size": 504,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Controller/TheatresController.php",
-			"settings":
-			{
-				"buffer_size": 1975,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Controller/AppController.php",
-			"settings":
-			{
-				"buffer_size": 3211,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "View/Orders/index.ctp",
-			"settings":
-			{
-				"buffer_size": 3172,
+				"buffer_size": 748,
 				"line_ending": "Unix"
 			}
 		}
@@ -644,17 +632,25 @@
 	},
 	"file_history":
 	[
-		"/var/www/cinema2/app/Controller/AppController.php",
+		"/var/www/cinema2/app/View/Theatres/add.ctp",
+		"/var/www/cinema2/app/Controller/TheatresController.php",
+		"/var/www/cinema2/app/Controller/MoviesController.php",
+		"/var/www/cinema2/app/View/Movies/edit.ctp",
+		"/var/www/cinema2/app/View/Orders/add.ctp",
+		"/var/www/cinema2/app/Model/Performance.php",
+		"/var/www/cinema2/app/Model/Order.php",
+		"/var/www/cinema2/app/Controller/OrdersController.php",
+		"/var/www/cinema2/app/View/Orders/edit.ctp",
 		"/var/www/cinema2/app/View/Orders/index.ctp",
+		"/var/www/cinema2/app/Controller/AppController.php",
+		"/var/www/cinema2/app/Model/Theatre.php",
 		"/var/www/cinema2/app/View/Orders/view.ctp",
 		"/var/www/cinema2/app/View/Orders/user_index.ctp",
 		"/var/www/cinema2/app/View/Performances/index.ctp",
 		"/var/www/cinema2/app/View/Performances/view.ctp",
 		"/var/www/cinema2/app/View/Performances/add.ctp",
-		"/var/www/cinema2/app/View/Orders/edit.ctp",
 		"/var/www/cinema2/app/Controller/PerformancesController.php",
 		"/var/www/cinema2/app/View/Layouts/default.ctp",
-		"/var/www/cinema2/app/Controller/OrdersController.php",
 		"/var/www/cinema2/app/Controller/UsersController.php",
 		"/var/www/cinema2/app/View/Users/index.ctp",
 		"/var/www/cinema2/app/View/Users/add.ctp",
@@ -662,27 +658,19 @@
 		"/var/www/cinema2/app/Model/User.php",
 		"/var/www/cinema2/app/View/Orders/index_user.ctp",
 		"/var/www/cinema2/app/Model/AppModel.php",
-		"/var/www/cinema2/app/View/Orders/add.ctp",
 		"/var/www/cinema2/app/View/Users/login.ctp",
 		"/var/www/cinema2/app/webroot/css/cake.generic.css",
-		"/var/www/cinema2/app/Model/Performance.php",
-		"/var/www/cinema2/app/Model/Order.php",
 		"/var/www/cinema2/app/View/Users/view.ctp",
 		"/var/www/cinema2/app/View/Performances/edit.ctp",
 		"/var/www/cinema2/app/View/Movies/add.ctp",
-		"/var/www/cinema2/app/Model/Theatre.php",
 		"/var/www/cinema2/app/Model/Movie.php",
 		"/var/www/cinema2/app/View/Theatres/view.ctp",
 		"/var/www/cinema2/app/View/Movies/view.ctp",
-		"/var/www/cinema2/app/Controller/MoviesController.php",
 		"/var/www/cinema2/app/View/Movies/index.ctp",
 		"/var/www/cinema2/app/View/Theatres/index.ctp",
-		"/var/www/cinema2/app/View/Theatres/add.ctp",
 		"/var/www/cinema2/app/View/Theatres/edit.ctp",
-		"/var/www/cinema2/app/Controller/TheatresController.php",
 		"/var/www/cinema2/app/Model/Show.php",
 		"/var/www/cinema2/app/Controller/ShowsController.php",
-		"/var/www/cinema2/app/View/Movies/edit.ctp",
 		"/var/www/cinema2/app/Model/Post.php",
 		"/var/www/cinema2/app/View/Posts/add.ctp",
 		"/var/www/cinema2/app/Controller/PostsController.php",
@@ -789,6 +777,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"UNSIGNED",
+			"TABLE IF NOT EXISTS",
+			"created TIMESTAMP DEFAULT NULL",
+			"PRIMARY KEY (id) )",
+			"id SERIAL",
+			"TINYINTEGER(1)",
+			"DATETIME NULL",
+			"DATETIME",
+			"INTEGER UNSIGNED NOT NULL AUTO_INCREMENT",
+			"INT",
+			"Cinema.",
+			"`",
+			"perfo",
+			"sumedAccepted",
 			"totalSeats",
 			"Jesiotr",
 			"article",
@@ -902,21 +904,7 @@
 			"precise",
 			"strategy ",
 			"Following",
-			"cite",
-			"promo",
-			"geyer",
-			"cite",
-			"bfseries",
-			"geyer",
-			"bib",
-			"publisher",
-			"team",
-			"R-team",
-			"geyer",
-			"Geyer",
-			"Charles",
-			"Geyer",
-			"Maxime"
+			"cite"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -924,6 +912,17 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"TABLE ",
+			"created TIMESTAMP DEFAULT NOW()",
+			");",
+			"id SERIAL PRIMARY KEY",
+			"BOOLEAN",
+			"TIMESTAMP",
+			"SERIAL",
+			"INTEGER",
+			"",
+			"acceptedSeatsNo",
 			"summant",
 			"customer",
 			"cashier",
@@ -1040,18 +1039,7 @@
 			"LiangProblemDimension",
 			"LiangClusterSigma",
 			"LiangClustesSigma",
-			"LiangClustersWeights",
-			"LiangNoOfClusters",
-			"subsection",
-			"proposalLogUDensities",
-			"lexics",
-			"Lexic",
-			"Lex",
-			"Prob",
-			"Probs",
-			"lastStatesLogUDensities",
-			"lastLogProbability",
-			"proposal"
+			"LiangClustersWeights"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -1062,53 +1050,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Model/Order.php",
+					"file": "Controller/PerformancesController.php",
 					"settings":
 					{
-						"buffer_size": 2107,
+						"buffer_size": 3521,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								846,
-								846
-							]
-						],
-						"settings":
-						{
-							"encoding_helper_confidence": 0.99,
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Controller/OrdersController.php",
-					"settings":
-					{
-						"buffer_size": 4789,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1223,
-								1223
+								1147,
+								1147
 							]
 						],
 						"settings":
@@ -1119,6 +1077,36 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "View/Movies/add.ctp",
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								713,
+								713
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1128,151 +1116,67 @@
 				},
 				{
 					"buffer": 2,
-					"file": "View/Orders/edit.ctp",
+					"file": "/home/matteo/Documents/Scienza/Informatica/DataBases/postgresSkrypt.sql",
 					"settings":
 					{
-						"buffer_size": 882,
+						"buffer_size": 1191,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								843,
+								843
 							]
 						],
 						"settings":
 						{
-							"encoding_helper_confidence": 0.99,
+							"auto_name": "",
+							"encoding_helper_confidence": 1.0,
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 18.0,
+						"translation.y": 38.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 3,
-					"file": "Model/Theatre.php",
+					"file": "/home/matteo/Documents/Scienza/Informatica/DataBases/Learning/creatingPostExample.sql",
 					"settings":
 					{
-						"buffer_size": 504,
+						"buffer_size": 748,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								426,
-								426
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"encoding_helper_confidence": 0.857639270062,
+							"encoding_helper_confidence": 1.0,
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/SQL/SQL.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Controller/TheatresController.php",
-					"settings":
-					{
-						"buffer_size": 1975,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1290,
-								1290
-							]
-						],
-						"settings":
-						{
-							"encoding_helper_confidence": 0.99,
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Controller/AppController.php",
-					"settings":
-					{
-						"buffer_size": 3211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2348,
-								2348
-							]
-						],
-						"settings":
-						{
-							"encoding_helper_confidence": 0.9690625,
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1100.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "View/Orders/index.ctp",
-					"settings":
-					{
-						"buffer_size": 3172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2714,
-								2714
-							]
-						],
-						"settings":
-						{
-							"encoding_helper_confidence": 0.99,
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/CakePHP (Native)/CakePHP-Template.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1521.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1297,11 +1201,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1326,8 +1237,48 @@
 		"selected_items":
 		[
 			[
+				"movieadd",
+				"View/Movies/add.ctp"
+			],
+			[
+				"movieedi",
+				"View/Movies/edit.ctp"
+			],
+			[
+				"movi",
+				"Controller/MoviesController.php"
+			],
+			[
+				"theatadd",
+				"View/Theatres/add.ctp"
+			],
+			[
+				"theat",
+				"Controller/TheatresController.php"
+			],
+			[
+				"perfo",
+				"Controller/PerformancesController.php"
+			],
+			[
 				"ordein",
 				"View/Orders/index.ctp"
+			],
+			[
+				"ordeadd",
+				"View/Orders/add.ctp"
+			],
+			[
+				"edit",
+				"View/Orders/edit.ctp"
+			],
+			[
+				"orde",
+				"Model/Order.php"
+			],
+			[
+				"ord",
+				"Controller/OrdersController.php"
 			],
 			[
 				"app",
@@ -1336,10 +1287,6 @@
 			[
 				"theatrecon",
 				"Controller/TheatresController.php"
-			],
-			[
-				"theat",
-				"Model/Theatre.php"
 			],
 			[
 				"orderedit",
@@ -1398,10 +1345,6 @@
 				"View/Orders/index.ctp"
 			],
 			[
-				"orde",
-				"Controller/OrdersController.php"
-			],
-			[
 				"orderin",
 				"View/Orders/index.ctp"
 			],
@@ -1456,10 +1399,6 @@
 			[
 				"o",
 				"Model/Order.php"
-			],
-			[
-				"ord",
-				"Controller/OrdersController.php"
 			],
 			[
 				"orderadd",
@@ -1524,10 +1463,6 @@
 			[
 				"moviecon",
 				"Controller/MoviesController.php"
-			],
-			[
-				"movieadd",
-				"View/Movies/add.ctp"
 			],
 			[
 				"inde",

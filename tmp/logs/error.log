@@ -2406,3 +2406,43 @@ Stack Trace:
 #3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-07-02 15:05:30 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/cinema2/app/Model/Order.php, line 117]
+2013-07-02 15:05:30 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cinema2/orders
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 117, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 117, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-02 15:05:32 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/cinema2/app/Model/Order.php, line 117]
+2013-07-02 15:05:32 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cinema2/performances
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 117, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 117, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-02 15:07:40 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/cinema2/app/Model/Order.php, line 117]
+2013-07-02 15:07:40 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cinema2/orders
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cinema...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cinema...', 117, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cinema...', 117, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-02 15:11:22 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/cinema2/app/Model/Order.php, line 121]
+2013-07-02 15:11:22 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cinema2/orders/add/5
+Stack Trace:
+#0 /var/www/cinema2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cinema...', 121)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cinema...', 121, Array)
+#2 /var/www/cinema2/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cinema...', 121, Array)
+#3 /var/www/cinema2/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
